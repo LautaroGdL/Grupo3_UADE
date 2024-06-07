@@ -2,7 +2,8 @@
 
 :root{
     --main-color: #000000;
-    --blue: #ffffff;
+    --white: #ffffff;
+    --green: #7ea70e;
     --border: .1rem solid rgba(0, 0, 0, 0.795);
 }
 
@@ -28,7 +29,7 @@
 }
 
 .header .container {
-    background: var(--blue);
+    background: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,6 +83,7 @@
 }
 
 
+
 .titulo {
     display: flex;
     justify-content: center;
@@ -104,7 +106,7 @@
     padding: 1rem;
     width: 100%;
     text-align: center;
-    background-color: var(--blue);
+    background-color: var(--white);
     margin: 0;
     /* background-color: #00405c; */
 }
@@ -112,7 +114,7 @@
 .footer .container{
     padding: 1rem;
     text-align: center;
-    background-color: var(--blue);
+    background-color: var(--white);
     /* background-color: #00405c; */
 }
 
@@ -120,3 +122,171 @@
     width: 100px;
     height: auto;
 }
+
+/*------Pagina Integrantes------*/
+.seccion-integrantes {
+    background-color: #f3f3f3;
+    height: 500px;
+    width: 1000px;
+    margin: 40px 0px;
+    border-radius: 20px;
+    padding: 40px 80px;
+}
+
+.seccion-integrantes div ul {
+    list-style: none;
+    color: #5E5E5E;
+    line-height: 4;
+    font-size: 23px;
+}
+
+.datos-integrantes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datos-integrantes ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.datos-integrantes li {
+    margin-bottom: 10px;
+}
+
+.datos-integrantes img {
+    max-width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.footer-integrantes {
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+    padding: 1rem;
+}
+
+.footer-integrantes .container {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--green);
+}
+
+.footer-integrantes .container img {
+    width: 100px;
+}
+
+/*------Fin Pagina Integrantes------*/
+
+/*------Pagina Juegos------*/
+.seccion-juegos {
+    background-color: #f3f3f3;
+    height: 500px;
+    width: 1000px;
+    margin: 40px 0px;
+    border-radius: 20px;
+    padding: 40px 80px;
+}
+
+.seccion-juegos div ul {
+    list-style: none;
+    color: #5E5E5E;
+    line-height: 4;
+    font-size: 23px;
+}
+
+article {
+    position: relative;
+    width: 250px;
+    transition: all .3s ease;
+}
+
+article img:first-child {
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+
+article img:last-child {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: all .3s ease;
+    opacity: 0; /* Ocultar la última imagen por defecto */
+}
+
+article:hover {
+    transform: 
+        perspective(250px)
+        rotateX(10deg)
+        translateY(-5%)
+        translateZ(0);
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: 
+        linear-gradient(
+            to bottom,
+            transparent 10%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0) 95%
+        );
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+article:hover::before {
+    opacity: 1;
+}
+
+article:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+.footer-juegos {
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+    padding: 1rem;
+}
+
+.footer-juegos .container {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--green);
+}
+
+.footer-juegos .container img {
+    width: 100px;
+}
+
+/*------Fin Pagina Juegos------*/
+
