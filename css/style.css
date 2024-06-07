@@ -191,22 +191,38 @@
 
 /*------Fin Pagina Integrantes------*/
 
+
+
+
 /*------Pagina Juegos------*/
 .seccion-juegos {
     background-color: #f3f3f3;
-    height: 500px;
-    width: 1000px;
+    height: auto;
+    width: 85%;
     margin: 40px 0px;
     border-radius: 20px;
-    padding: 40px 80px;
+    padding: 40px 80px;  
 }
 
-.seccion-juegos div ul {
-    list-style: none;
-    color: #5E5E5E;
-    line-height: 4;
-    font-size: 23px;
+.seccion-juegos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.seccion-juegos .cart-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-juegos .cart-juego p{
+    text-transform: capitalize;
+    font-size: 22px;
+    width: 92%;
+    margin-bottom: 30px;
+}
+
 
 article {
     position: relative;
