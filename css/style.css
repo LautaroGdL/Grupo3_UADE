@@ -101,26 +101,25 @@
 }
 
 
-.footer {
-    position: relative;
-    padding: 1rem;
+.footer-inicio {
+    position: flex;
+    bottom: 0;
+    left: 0;
     width: 100%;
     text-align: center;
     background-color: var(--white);
     margin: 0;
-    /* background-color: #00405c; */
+    padding: 1rem 100;
 }
 
-.footer .container{
+.footer-inicio .container {
     padding: 1rem;
     text-align: center;
-    background-color: var(--white);
-    /* background-color: #00405c; */
+    background-color: var(--green);
 }
 
-.footer .container img{
+.footer-inicio .container img {
     width: 100px;
-    height: auto;
 }
 
 /*------Pagina Integrantes------*/
@@ -176,7 +175,7 @@
     text-align: center;
     background-color: var(--white);
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 100;
 }
 
 .footer-integrantes .container {
@@ -284,14 +283,14 @@ article:hover img:last-child {
 }
 
 .footer-juegos {
-    position: flex;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
     background-color: var(--white);
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 100;
 }
 
 .footer-juegos .container {
