@@ -2,6 +2,7 @@ let lastTime = 0;
 let dropInterval = 1000;
 let dropCounter = 0;
 
+
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 const grid = createMatriz(10,20);
@@ -28,6 +29,22 @@ function createMatriz(width, height) {
 
     return matriz;
 }
+
+function collide(grid, player) {
+    const matriz = player.matriz;
+    const offset = player.pos;
+
+    for(let y=0; y<matriz.length; ++y) {
+        for(let x=0; x<matriz[y].length; ++x) {
+            if(matriz[y][x]!==0 && (grid[y + offset.y] && [y + offset.y][x + offset.x])!==0 ) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
 
 'Funcion que sirve para dibujar la matriz (y ubicar la forma)'
 function drawMatriz(matriz, offset) {
@@ -57,19 +74,28 @@ function  update(time = 0) {
     dropCounter+= deltaTime;
 
     if (dropCounter>dropInterval){
-        player.pos.y++;
-        dropCounter = 0;
+        playerDrop()
     }
 
     draw();
     requestAnimationFrame(update); 
 }
 
-'Se crea la opcion de mover para abajo la forma'
+function playerDrop() {
+    player.pos.y++;
+    dropCounter=0;
+}
+
+'Se crea la opcion de mover la forma (posicion del jugador)'
 document.addEventListener('keydown', event => {   
-    if (event.key===40) {
-        player.pos.y++;
-        dropCounter = 0;        
+    if (event.keyCode===40) {
+        playerDrop()       
+    } 
+    else if(event.keyCode===37) {
+        player.pos.x--;
+    }
+    else if(event.keyCode===39) {
+        player.pos.x++;
     }
 });
 
