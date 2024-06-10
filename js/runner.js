@@ -200,13 +200,13 @@ function GanarPuntos() {
     score++;
     textoScore.innerText = score;
     if (score == 5) {
-        gameVel = 1.1;
+        gameVel = 1.2;
         contenedor.classList.add("mediodia");
     } else if (score == 7) {
-        gameVel = 1.25;
+        gameVel = 1.5;
         contenedor.classList.add("tarde");
     } else if (score == 10) {
-        gameVel = 1.5;
+        gameVel = 1.7;
         contenedor.classList.add("noche");
     }
     suelo.style.animationDuration = (3 / gameVel) + "s";
@@ -290,26 +290,26 @@ function RestartGame() {
     tiempoObstaculo = 2;
     tiempoHastaNube = 0.5;
 
-    // Clear obstacles and clouds
+    // Limpiar obstaculos y nubes
     obstaculos.forEach(obstaculo => obstaculo.parentNode.removeChild(obstaculo));
     obstaculos = [];
     nubes.forEach(nube => nube.parentNode.removeChild(nube));
     nubes = [];
 
-    // Hide game over screen
+    // Esconder Game Over
     gameOver.style.display = "none";
 
-    // Reset classes
+    // Reiniciar clases
     animal.classList.remove("animal-estrellado");
     animal.classList.add("animal-corriendo");
 
-    // Reset score display
+    // Reiniciar puntuacion
     textoScore.innerText = score;
 
-    // Reset scene class
+    // Reiniciar clase del escenario
     contenedor.classList.remove("mediodia", "tarde", "noche");
 
-    // Restart game loop
+    // Reiniciar GameLoop
     lastUpdateTime = Date.now();
     requestAnimationFrame(GameLoop);
 }
