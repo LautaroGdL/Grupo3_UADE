@@ -97,6 +97,13 @@ img {
     border-radius: 1em;
 }
 
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
 /******************************************************************************************/
 .endgame-content {
     text-align: center;
