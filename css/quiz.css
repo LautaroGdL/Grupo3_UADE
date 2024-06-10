@@ -122,6 +122,25 @@ img {
 
 /*------Pagina informacion------*/
 
+.header h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 15rem;
+}
+
+.header .navbar a {
+    position: relative;
+    padding: 10px 15px; 
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header .navbar a:hover {
+    color: #000000;
+
+    background-color: #FFD700; 
+    border-radius: 50%; 
+}
 
 .seccion-info {
     background-color: #f3f3f3;
