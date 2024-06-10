@@ -70,8 +70,8 @@ function Start() {
     textoScore = document.querySelector(".score");
     animal = document.querySelector(".animal");
     document.addEventListener("keydown", HandleKeyDown);
-    document.addEventListener("click", HandleClick); // Cambiar a HandleClick
-    document.addEventListener("touchstart", HandleTouchStart); // Agregar evento de toque para saltar
+    contenedor.addEventListener("click", HandleContainerClick); // Manejar clics dentro del contenedor
+    contenedor.addEventListener("touchstart", HandleContainerTouchStart); // Manejar toques dentro del contenedor
 
     requestAnimationFrame(GameLoop);
 }
@@ -87,21 +87,36 @@ function HandleKeyDown(ev) {
     }
 }
 
-function HandleTouchStart(ev) { 
+function HandleContainerTouchStart(ev) { 
     ev.preventDefault(); 
-    if (parado) {
-        RestartGame();
-    } else {
-        Saltar();
+    var touch = ev.touches[0];
+    var touchX = touch.clientX;
+    var touchY = touch.clientY;
+    var contenedorRect = contenedor.getBoundingClientRect();
+
+    if (touchX >= contenedorRect.left && touchX <= contenedorRect.right &&
+        touchY >= contenedorRect.top && touchY <= contenedorRect.bottom) {
+        if (parado) {
+            RestartGame();
+        } else {
+            Saltar();
+        }
     }
 }
 
-function HandleClick(ev) {
+function HandleContainerClick(ev) {
     ev.preventDefault();
-    if (parado) {
-        RestartGame();
-    } else {
-        Saltar();
+    var clickX = ev.clientX;
+    var clickY = ev.clientY;
+    var contenedorRect = contenedor.getBoundingClientRect();
+
+    if (clickX >= contenedorRect.left && clickX <= contenedorRect.right &&
+        clickY >= contenedorRect.top && clickY <= contenedorRect.bottom) {
+        if (parado) {
+            RestartGame();
+        } else {
+            Saltar();
+        }
     }
 }
 
@@ -202,8 +217,8 @@ function GanarPuntos() {
     if (score == 5) {
         gameVel = 1.2;
         contenedor.classList.add("mediodia");
-    } else if (score == 7) {
-        gameVel = 1.5;
+    } else if (score == 5) {
+        gameVel = 1.25;
         contenedor.classList.add("tarde");
     } else if (score == 10) {
         gameVel = 1.7;
@@ -280,39 +295,19 @@ function Estrellarse() {
 }
 
 function RestartGame() {
-    // Reset game variables
     parado = false;
     score = 0;
-    animalPosY = sueloY;
-    velY = 0;
     gameVel = 1;
     sueloX = 0;
-    tiempoObstaculo = 2;
-    tiempoHastaNube = 0.5;
-
-    // Limpiar obstaculos y nubes
     obstaculos.forEach(obstaculo => obstaculo.parentNode.removeChild(obstaculo));
     obstaculos = [];
     nubes.forEach(nube => nube.parentNode.removeChild(nube));
     nubes = [];
-
-    // Esconder Game Over
     gameOver.style.display = "none";
-
-    // Reiniciar clases
-    animal.classList.remove("animal-estrellado");
     animal.classList.add("animal-corriendo");
-
-    // Reiniciar puntuacion
+    animal.classList.remove("animal-estrellado");
     textoScore.innerText = score;
-
-    // Reiniciar clase del escenario
-    contenedor.classList.remove("mediodia", "tarde", "noche");
-
-    // Reiniciar GameLoop
-    lastUpdateTime = Date.now();
-    requestAnimationFrame(GameLoop);
+    Start();
 }
 
-// Iniciar el juego
 Start();
