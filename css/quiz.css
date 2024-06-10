@@ -136,20 +136,23 @@ img {
 .header .container {
     background: var(--white);
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
-    gap: 2%; /* Espaciado entre elementos */
+    flex-wrap: nowrap;
     align-items: center;
     padding: 1.5rem 7%;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header h1 {
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 0 1rem;
+    flex-grow: 1;
 }
 
 .header .navbar {
     display: flex;
+    margin-left: auto;
 }
 
 .navbar a {
