@@ -162,6 +162,10 @@
     margin: 0;
 }
 
+.datos-info img{
+    align-items: center;
+}
+
 .datos-infor li {
     margin-bottom: 10px;
 }
@@ -284,7 +288,6 @@
 }
 
 .seccion-juegos .cart-juego p{
-    text-transform: capitalize;
     font-size: 22px;
     width: 92%;
     margin-bottom: 30px;

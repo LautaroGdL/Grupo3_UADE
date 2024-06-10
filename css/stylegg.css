@@ -47,3 +47,65 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
+#gameMessages{
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: center;
+    text-align: justify;
+}
+
+
+
+.footer-juego {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+    bottom: 0; 
+}
+
+.footer-juego .container {
+    padding: 1rem;
+    text-align: center;
+    background-color: #20a268;
+}
+
+
+@media (max-width: 600px) {
+    #wordContainer {
+        margin-top: 20px;
+    }
+    img {
+        width:90%  
+    }
+
+    .letter {
+        margin: 0 5px;
+        font-size: calc(2rem + 4vw); /* Aumenta el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    #startButton {
+        padding: 8px;
+        font-size: calc(1.5rem + 1.5vw);
+    }
+
+
+    #gameMessages{
+        padding: 8px;
+        font-size: calc(1rem + 1vw);
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .footer-juego {
+        padding: 0.5rem;
+    }
+
+    .footer-juego .container {
+        padding: 0.5rem;
+    }
+}
