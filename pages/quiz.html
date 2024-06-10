@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas y Respuestas</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1>Adivina el Animal</h1>
+    <div id="questionContainer">
+        <h3 class="task">Que animal es?</h3>
+        <div class="puntos" id="score">Puntaje: 0</div>
+    </div>
+    <div class="questionContainer2">
+        <div id="question"></div>
+        <div>
+             <p id="instruction">Elige el animal segun la imagen correctamente para ganar puntos:</p>
+             <div id="options"></div>
+        </div>
+    </div>
+    <button id="nextButton">Siguiente</button>
+    <div class="result" id="result"></div>
+    <button id="restartButton" style="display:none;">Reiniciar</button>
+    <script src="quiz.js"></script>
+</body>
+</html>
