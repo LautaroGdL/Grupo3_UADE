@@ -1,79 +1,76 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    height: 100vh;
-    background: #7ea70e;
+body {
+    background: #20a268;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.contenedor {
+    width: 920px;
+    height: 280px;
+    background: linear-gradient(#b7d6c7, transparent) #ffe2d1;
+    transition: background-color 1s linear;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Espacio entre el contenedor del juego y la descripción */
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.contenedor{
-    width: 920px;
-    height: 280px;
-    margin: 0 auto;
-
-    position: relative;
-
-    background: linear-gradient(#b7d6c7, transparent) #ffe2d1;/*linear-gradient(#90ebff, white);*/
-    transition: background-color 1s linear;
-    overflow: hidden;
-}
-
-.animal{
+.animal {
     width: 84px;
     height: 84px;
-
     position: absolute;
     bottom: 22px;
     left: 42px;
     z-index: 2;
-
     background: url(../images/runner/yaguarete.png) repeat-x 0px 0px;
     background-size: 336px 84px;
     background-position-x: 0px;
 }
 
-.animal-corriendo{
+.animal-corriendo {
     animation: animarAnimal 0.25s steps(2) infinite;
 }
 
-.animal-estrellado{
+.animal-estrellado {
     background-position-x: -252px;
 }
 
-@keyframes animarAnimal{
-    from{
+@keyframes animarAnimal {
+    from {
         background-position-x: -84px;
     }
-    to{
+    to {
         background-position-x: -252px;
     }
 }
 
-.suelo{
+.suelo {
     width: 200%;
     height: 42px;
-
     position: absolute;
     bottom: 0;
     left: 0;
-
     background: url(../images/runner/suelo.png) repeat-x 0px 0px;
     background-size: 50% 42px;
 }
 
-.score{
+.score {
     width: 100px;
     height: 30px;
-
     position: absolute;
     top: 5px;
     right: 15px;
     z-index: 10;
-
     color: #d48872;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
@@ -81,32 +78,27 @@ body{
     text-align: right;
 }
 
-.cactus{
+.cactus {
     width: 46px;
     height: 96px;
-
     position: absolute;
     bottom: 16px;
     left: 600px;
     z-index: 1;
-
     background: url(../images/runner/cactus1.png) no-repeat;
 }
 
-.cactus2{
+.cactus2 {
     width: 98px;
     height: 66px;
-
     background: url(../images/runner/cactus2.png) no-repeat;
 }
 
-.nube{
+.nube {
     width: 92px;
     height: 26px;
-
     position: absolute;
     z-index: 0;
-
     background: url(../images/runner/nube.png) no-repeat;
     background-size: 92px 26px;
 }
@@ -123,16 +115,46 @@ body{
     background-color: #aca8c7;
 }
 
-.game-over{
+.game-over {
     display: none;
-
     position: absolute;
-    width: 100%;
-
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #7e928b;
     font-size: 30px;
     font-family: Verdana;
     font-weight: 700;
+    z-index: 20; /* Ensure it is above other elements */
+}
+
+.descripcion {
+    width: 100%;
+    max-width: 880px; /* Alineado con el ancho del contenedor */
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.descripcion h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.descripcion p {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descripcion img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
