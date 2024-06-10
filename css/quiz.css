@@ -142,7 +142,8 @@ img {
 .header h1 {
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-left: 15rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .header .navbar a {
