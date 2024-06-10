@@ -188,6 +188,7 @@ body {
 .header .container {
     background: var(--white);
     display: flex;
+    gap: 1%;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 7%;
