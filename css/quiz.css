@@ -123,7 +123,7 @@ img {
 /*------Pagina informacion------*/
 .header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     margin-top: 0;
     margin-bottom: 15px;
