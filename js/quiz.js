@@ -144,7 +144,7 @@ function endGame() {
     let endgameText = '';
 
     if (score >= 0 && score <= 4) {
-        endgameImage = 'quizimg/low_score_image.png';
+        endgameImage = '../images/low_score_image.png';
         endgameText = 'Sabes poco de animales. Deberías aprender mas!';
     } else if (score >= 5 && score <= 6) {
         endgameImage = 'quizimg/medium_score_image.png';

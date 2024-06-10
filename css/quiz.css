@@ -133,6 +133,8 @@ img {
 .header .container {
     background: var(--white);
     display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
     align-items: center;
     padding: 1.5rem 7%;
 }
