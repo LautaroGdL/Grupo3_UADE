@@ -77,14 +77,19 @@ function Start() {
 }
 
 function HandleKeyDown(ev) {
-    if (ev.keyCode == 32) { // keyCode en minúscula
-        ev.preventDefault(); // Evitar el comportamiento predeterminado del espacio
+    if (ev.keyCode == 32 ) { 
+        ev.preventDefault(); 
         if (parado) {
             RestartGame();
         } else {
             Saltar();
         }
     }
+}
+
+function HandleTouchStart(ev) { 
+    ev.preventDefault(); 
+    Saltar();
 }
 
 function HandleRestart() {
@@ -97,7 +102,7 @@ function Saltar() {
     if (animalPosY === sueloY) {
         saltando = true;
         velY = impulso;
-        animal.classList.remove("animal-corriendo"); // remove en minúscula
+        animal.classList.remove("animal-corriendo"); 
     }
 }
 

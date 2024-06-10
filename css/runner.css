@@ -4,12 +4,14 @@
 }
 
 body {
-    background: #20a268;
+    background: #7ea70e;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .contenedor {
@@ -19,10 +21,9 @@ body {
     transition: background-color 1s linear;
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px; /* Espacio entre el contenedor del juego y la descripción */
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .animal {
@@ -157,4 +158,38 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: block;
     margin: 0 auto; /* Center the image */
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        width: 100%;
+        height: auto;
+    }
+    .animal {
+        width: 48px;
+        height: 48px;
+        bottom: 12px;
+        left: 10px;
+    }
+    .cactus {
+        width: 24px;
+        height: 50px;
+    }
+    .cactus2 {
+        width: 50px;
+        height: 34px;
+    }
+    .nube {
+        width: 52px;
+        height: 14px;
+    }
+    .score {
+        font-size: 18px;
+    }
+    .game-over {
+        font-size: 18px;
+    }
+    .descripcion {
+        padding: 5px;
+    }
 }
