@@ -131,7 +131,7 @@ img {
 
 .header .container {
     background: var(--white);
-    gap: ;
+    gap: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
