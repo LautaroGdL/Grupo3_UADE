@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-color: #000000;
     --white: #ffffff;
     --green: #20a268;
@@ -8,28 +8,82 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    /* background: #20a268; */
     background-image: url(../images/La-Pampa.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
-    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background: var(--white);
+    padding: 1.5rem 7%;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 15rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.header .navbar a {
+    position: relative;
+    padding: 10px 15px; 
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header .navbar a:hover {
+    color: #000000;
+    background-color: #FFD700; 
+    border-radius: 50%; 
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0; /* Espacio entre el contenido y el header/footer */
 }
 
 .contenedor {
-    width: 920px;
+    width: 100%;
+    max-width: 920px;
     height: 280px;
     background: linear-gradient(#b7d6c7, transparent) #ffe2d1;
     transition: background-color 1s linear;
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -145,7 +199,7 @@ body {
     background-color: #ffffff;
     border-top: 2px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+
 }
 
 .descripcion h2 {
@@ -168,199 +222,98 @@ body {
     margin: 0 auto; /* Center the image */
 }
 
-.navbar {
-    display: flex;
-}
-
-.navbar a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
-.header {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.header .container {
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 7%;
-    width: auto;
-    /* border-bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;     */
-}
-
-.header h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-left: 15rem;
-}
-
-.header .navbar a {
-    position: relative;
-    padding: 10px 15px; 
-    display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
-
-.header .navbar a:hover {
-    color: #000000;
-
-    background-color: #FFD700; 
-    border-radius: 50%; 
-}
-
 .footer-runner {
+    width: 100%;
+    text-align: center;
+    background-color: var(--green);
+    margin: 0;
+    padding: 1rem 0;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    text-align: center;
-    background-color: var(--white);
-    margin: 0;
-    padding: 1rem 100;
 }
 
 .footer-runner .container {
     padding: 1rem;
     background-color: var(--green);
+    color: var(--white); 
 }
 
-
-/* @media (min-width: 400px) {
-    
-    body {
-        background-image: url(../images/La-Pampa.jpg) no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: 100vh;
-        box-sizing: border-box;
+/* Estilos para pantallas de al menos 400px de ancho */
+@media (min-width: 400px) {
+    .contenedor {
+        height: 400px; /* Ajustar altura para pantallas medianas */
     }
 
-    .header {
+    .score, .game-over {
+        font-size: 24px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas de hasta 1200px de ancho */
+@media (max-width: 1200px) {
+    .contenedor {
+        height: 500px; /* Ajustar altura para pantallas grandes */
+    }
+
+    .score, .game-over {
+        font-size: 24px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .contenedor {
         width: 100%;
-        margin-top: 0;
-        margin-bottom: 15px;
+        height: 280px; /* Ajustar altura para pantallas pequeñas */
     }
-    
-    .header .container {
-        background: var(--white);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.5rem 7%;
-        width: auto;
+
+    .animal {
+        width: 42px;
+        height: 42px;
+        bottom: 11px;
+        left: 21px;
     }
-    
+
+    .cactus {
+        width: 23px;
+        height: 48px;
+        bottom: 8px;
+        left: 300px;
+    }
+
+    .nube {
+        width: 46px;
+        height: 13px;
+    }
+
+    .score {
+        font-size: 18px;
+    }
+
+    .game-over {
+        font-size: 18px;
+    }
+
+    .descripcion {
+        font-size: 12px;
+    }
+
     .header h1 {
-        color: rgb(0, 0, 0);
-        text-align: center;
-        margin-left: 15rem;
-    }
-    
-    .header .navbar a {
-        position: relative;
-        padding: 10px 15px; 
-        display: inline-block;
-        transition: background-color 0.3s ease, color 0.3s ease; 
-    }
-    
-    .header .navbar a:hover {
-        color: #000000;
-    
-        background-color: #FFD700; 
-        border-radius: 50%; 
-    }
-
-    .contenedor {
-        width: 100%;
-        height: auto;
-    }
-    .animal {
-        width: 48px;
-        height: 48px;
-        bottom: 12px;
-        left: 10px;
-    }
-    .cactus {
-        width: 24px;
-        height: 50px;
-    }
-    .cactus2 {
-        width: 50px;
-        height: 34px;
-    }
-    .nube {
-        width: 52px;
-        height: 14px;
-    }
-    .score {
+        margin-left: 0;
         font-size: 18px;
     }
-    .game-over {
-        font-size: 18px;
-    }
-    .descripcion {
-        padding: 5px;
-    }
-    
-} */
 
-/* @media (max-width: 1200px) {
-
-    body {
-        
-        background-image: url(../images/La-Pampa.jpg) no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: 100vh;
-        box-sizing: border-box;
+    .navbar a {
+        margin: 0 8px;
+        font-size: 14px;
     }
-
-    .contenedor {
-        width: 100%;
-        height: auto;
-    }
-    .animal {
-        width: 48px;
-        height: 48px;
-        bottom: 12px;
-        left: 10px;
-    }
-    .cactus {
-        width: 24px;
-        height: 50px;
-    }
-    .cactus2 {
-        width: 50px;
-        height: 34px;
-    }
-    .nube {
-        width: 52px;
-        height: 14px;
-    }
-    .score {
-        font-size: 18px;
-    }
-    .game-over {
-        font-size: 18px;
-    }
-    .descripcion {
-        padding: 5px;
-    }
-} */
+}
