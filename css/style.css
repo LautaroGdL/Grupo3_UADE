@@ -45,11 +45,19 @@
     text-align: left;
 }
 
-.header .navbar a:hover {
-    color: #000000;
-    text-decoration: underline;
+.header .navbar a {
+    position: relative;
+    padding: 10px 15px; /* Espacio alrededor del texto */
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
 }
 
+.header .navbar a:hover {
+    color: #000000;
+
+    background-color: #FFD700; /* Color de fondo del círculo */
+    border-radius: 50%; /* Redondear bordes completamente */
+}
 
 
 
