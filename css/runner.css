@@ -5,7 +5,7 @@
 
 body{
     height: 100vh;
-    background: #584040;
+    background: #7ea70e;
     display: flex;
     align-items: center;
 }
@@ -31,7 +31,7 @@ body{
     left: 42px;
     z-index: 2;
 
-    background: url(../images/runner/dino.png) repeat-x 0px 0px;
+    background: url(../images/runner/yaguarete.png) repeat-x 0px 0px;
     background-size: 336px 84px;
     background-position-x: 0px;
 }
