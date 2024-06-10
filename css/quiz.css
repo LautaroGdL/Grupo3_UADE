@@ -1,0 +1,183 @@
+#questionContainer{
+    display: block;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.puntos{
+    font-size: 1.7em;
+}
+
+#question {
+    margin-right: 20px;
+}
+
+.task{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1.8em;
+    width: auto;
+    max-width: 600px;
+}
+
+#nextButton{
+    font-size: 1.5em;
+}
+
+.questionContainer2{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.option {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 1em;
+    transition: background-color 0.3s ease;
+    font-size: 2em;
+    width: auto;
+    max-width: none;
+}
+
+
+.option:hover {
+    background-color: #f0f0f0; /* Cambiamos el color de fondo al pasar el cursor */
+}
+
+.option.selected {
+    background-color: #dc3545; /* Color de fondo rojo para opción incorrecta seleccionada*/
+}
+
+.option.correct {
+    background-color: #28a745; /* Color de fondo verde para opción correcta */
+}
+
+.option.incorrect {
+    background-color: #dc3545; /* Color de fondo rojo para opción incorrecta */
+}
+
+#nextButton {
+    display: block;
+    margin: 0 auto; /* Para centrar el botón horizontalmente */
+    margin-top: 1%;
+}
+
+#restartButton {
+    margin: 0 auto; /* Para centrar el botón horizontalmente */
+    margin-top: 1%;
+}
+
+.result {
+    font-size: 200%;
+    margin: 2% 0 1% 0;
+    text-align: center;
+}
+
+img {
+    max-width: 600px;
+    display: block; /* Para centrar la imagen */
+    margin: 0 auto; /* Para centrar la imagen horizontalmente */
+    border-radius: 1em;
+}
+
+/******************************************************************************************/
+.endgame-content {
+    text-align: center;
+    margin-top: 2%;
+    margin-top: 2%;
+}
+
+.endgame-image {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.endgame-text {
+    font-size: 1.5em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+/******************************************************************************************/
+
+
+@media (max-width: 768px) {
+    .puntos {
+        font-size: 1.2em;
+    }
+
+    .task {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    .option {
+        font-size: 1.5em;
+    }
+
+    #nextButton {
+        font-size: 1.2em;
+    }
+
+    #restartButton {
+        font-size: 1.2em;
+    }
+
+    .result {
+        font-size: 150%;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .puntos {
+        font-size: 1em;
+    }
+
+    .task {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .option {
+        font-size: 1.2em;
+    }
+
+    #nextButton {
+        font-size: 1em;
+    }
+
+    #restartButton {
+        font-size: 1em;
+    }
+
+    .result {
+        font-size: 120%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
