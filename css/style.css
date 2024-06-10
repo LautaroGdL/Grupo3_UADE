@@ -274,25 +274,29 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .seccion-juegos .cart-juego {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 1 30%; 
+    box-sizing: border-box; 
+    max-width: 30%;
 }
 
-.seccion-juegos .cart-juego p{
-    text-transform: capitalize;
+.seccion-juegos .cart-juego p {
     font-size: 22px;
-    width: 92%;
+    width: 100%;
     margin-bottom: 30px;
+    text-align: justify; 
 }
-
 
 article {
     position: relative;
-    width: 250px;
+    width: 100%;
     transition: all .3s ease;
 }
 
@@ -305,14 +309,14 @@ article img:first-child {
 
 article img:last-child {
     position: absolute;
-    width: 200px;
+    width: 80%; 
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     transform: translateY(25%);
     transition: all .3s ease;
-    opacity: 0; /* Ocultar la última imagen por defecto */
+    opacity: 0; 
 }
 
 article:hover {
@@ -371,3 +375,70 @@ article:hover img:last-child {
 }
 
 /*------Fin Pagina Juegos------*/
+
+
+/*------Pagina Información------*/
+
+.seccion-info {
+    background-color: #f3f3f3;
+    height: auto;
+    width: 1000px;
+    margin: 40px 0px;
+    border-radius: 20px;
+    padding: 40px 80px;
+}
+
+.seccion-info div ul {
+    list-style: none;
+    color: #5E5E5E;
+    line-height: 4;
+    font-size: 23px;
+}
+
+.datos-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datos-info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.datos-info li {
+    margin-bottom: 10px;
+}
+
+.datos-info img {
+    max-width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.footer-info {
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+    padding: 1rem 100;
+}
+
+.footer-integrantes .container {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--green);
+}
+
+
+/*------Fin Pagina Información------*/
