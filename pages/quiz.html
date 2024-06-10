@@ -7,21 +7,46 @@
     <link rel="stylesheet" href="../css/quiz.css">
 </head>
 <body>
-    <h1>Adivina el Animal</h1>
-    <div id="questionContainer">
-        <h3 class="task">Que animal es?</h3>
-        <div class="puntos" id="score">Puntaje: 0</div>
-    </div>
-    <div class="questionContainer2">
-        <div id="question"></div>
-        <div>
-             <p id="instruction">Elige el animal segun la imagen correctamente para ganar puntos:</p>
-             <div id="options"></div>
+    <!-- Header-->
+    <header class="header">
+
+        <div class="container">
+            <a style="display: flex;" href="index.html"><img src="images/logo.png" alt="" height="50px"></a>
+            <h1>Juegos</h1>
+            <nav class="navbar">
+                <a href="index.html">Inicio</a>
+                <a href="info.html">Información</a>
+                <a href="integrantes.html">Integrantes</a>
+                <a href="juegos.html">Juegos</a>
+            </nav>
         </div>
-    </div>
-    <button id="nextButton">Siguiente</button>
-    <div class="result" id="result"></div>
-    <button id="restartButton" style="display:none;">Reiniciar</button>
+    </header>
+
+    <main>
+        <h1>Adivina el Animal</h1>
+           <div id="questionContainer">
+               <h3 class="task">Que animal es?</h3>
+               <div class="puntos" id="score">Puntaje: 0</div>
+           </div>
+           <div class="questionContainer2">
+               <div id="question"></div>
+               <div>
+                    <p id="instruction">Elige el animal segun la imagen correctamente para ganar puntos:</p>
+                    <div id="options"></div>
+               </div>
+           </div>
+           <button id="nextButton">Siguiente</button>
+           <div class="result" id="result"></div>
+           <button id="restartButton" style="display:none;">Reiniciar</button>
+    </main>   
+    <!--Footer-->
+    <footer class="footer-integrantes">
+           <div class="container">
+           <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
+           </div>
+    </footer>
+<!--Footer-->
+
     <script src="../js/quiz.js"></script>
 </body>
 </html>

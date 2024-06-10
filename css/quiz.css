@@ -16,6 +16,12 @@
     font-size: 1.5em;
 }
 
+.background{
+    background-image: url('../images/quiz/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 p{
     font-size: 1.8em;
     width: auto;
