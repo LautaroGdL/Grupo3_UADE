@@ -236,10 +236,9 @@ body {
 }
 
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
     
     body {
-        /* background: #20a268; */
         background-image: url(../images/La-Pampa.jpg) no-repeat;
         background-size: cover;
         display: flex;
@@ -263,11 +262,6 @@ body {
         justify-content: space-between;
         padding: 1.5rem 7%;
         width: auto;
-        /* border-bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;     */
     }
     
     .header h1 {
@@ -322,12 +316,12 @@ body {
         padding: 5px;
     }
     
-}
+} */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
 
     body {
-        /* background: #20a268; */
+        
         background-image: url(../images/La-Pampa.jpg) no-repeat;
         background-size: cover;
         display: flex;
@@ -369,4 +363,4 @@ body {
     .descripcion {
         padding: 5px;
     }
-}
+} */
