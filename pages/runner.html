@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/runner.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <title>Animal Chrome</title>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="suelo"></div>
-        <div class="animal animal-corriendo"></div>
-        <div class="score">0</div>
-        <div class="game-over">GAME OVER</div> <!-- Move inside the .contenedor -->
+
+     <!-- Header-->
+     <header class="header">
+
+        <div class="container">
+            <a style="display: flex;" href="index.html"><img src="../images/logo.png" alt="" height="50px"></a>
+            <h1><b>Corre hasta donde puedas</b></h1>
+            <nav class="navbar">
+                <a href="../index.html">Inicio</a>
+                <a href="../info.html">Información</a>
+                <a href="../integrantes.html">Integrantes</a>
+                <a href="../juegos.html">Juegos</a>
+            </nav>
+        </div>
+        
+    </header>
+    <!--home-->
+
+    <main>
+        <div class="contenedor">
+            <div class="suelo"></div>
+            <div class="animal animal-corriendo"></div>
+            <div class="score">0</div>
+            <div class="game-over">GAME OVER</div> <!-- Move inside the .contenedor -->
+        </div>
+        <div class="descripcion">
+            <h2><b>El Yaguarete:</b></h2>
+            <p>Felino imponente, solo le ganan el león y el tigre en tamaño. La caza y depredación hizo que desapareciera de los Esteros del Iberá, donde se lo está tratando de volver a llevar y proteger. Especie muy amenazada. Actualmente se lo encuentra solo en la selva misionera, cuando en su origen vivía también en Jujuy, Chaco y Formosa.</p>
+            <img src="../images/runner/yaguarete-foto.jpg" alt="Yaguarete">
+        </div>
+        <script src="../js/runner.js"></script>
+    </main>
+
+<!--Footer-->
+<footer class="footer-runner">
+    <div class="container">
+        <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
     </div>
-    <div class="descripcion">
-        <h2><b>El Yaguarete:</b></h2>
-        <p>Felino imponente, solo le ganan el león y el tigre en tamaño. La caza y depredación hizo que desapareciera de los Esteros del Iberá, donde se lo está tratando de volver a llevar y proteger. Especie muy amenazada. Actualmente se lo encuentra solo en la selva misionera, cuando en su origen vivía también en Jujuy, Chaco y Formosa.</p>
-        <img src="../images/runner/yaguarete-foto.jpg" alt="Yaguarete">
-    </div>
-    <script src="../js/runner.js"></script>
+</footer>
+<!--Footer-->
 </body>
 </html>

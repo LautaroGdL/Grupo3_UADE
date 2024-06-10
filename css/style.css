@@ -191,8 +191,6 @@
 /*------fin Pagina informacion------*/
 
 
-
-
 /*------Pagina Integrantes------*/
 
 .seccion-integrantes {
@@ -434,7 +432,7 @@ article:hover img:last-child {
     padding: 1rem 100;
 }
 
-.footer-integrantes .container {
+.footer-info .container {
     padding: 1rem;
     text-align: center;
     background-color: var(--green);

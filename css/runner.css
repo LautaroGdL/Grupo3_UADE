@@ -1,15 +1,23 @@
+:root{
+    --main-color: #000000;
+    --white: #ffffff;
+    --green: #20a268;
+    --border: .1rem solid rgba(0, 0, 0, 0.795);
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background: #7ea70e;
+    /* background: #20a268; */
+    background-image: url(../images/La-Pampa.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -86,13 +94,13 @@ body {
     bottom: 16px;
     left: 600px;
     z-index: 1;
-    background: url(../images/runner/cactus1.png) no-repeat;
+    background: url(../images/runner/arbol1.png) no-repeat;
 }
 
 .cactus2 {
     width: 98px;
     height: 66px;
-    background: url(../images/runner/cactus2.png) no-repeat;
+    background: url(../images/runner/arbol2.png) no-repeat;
 }
 
 .nube {
@@ -193,3 +201,64 @@ body {
         padding: 5px;
     }
 }
+
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.header .container {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    width: auto;
+    /* border-bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;     */
+}
+
+.header h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.header .navbar a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+.footer-runner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+    padding: 1rem 100;
+}
+
+.footer-runner .container {
+    padding: 1rem;
+    background-color: var(--green);
+}
+
+
