@@ -70,14 +70,14 @@ function Start() {
     textoScore = document.querySelector(".score");
     animal = document.querySelector(".animal");
     document.addEventListener("keydown", HandleKeyDown);
-    document.addEventListener("click", HandleRestart); // Agregar evento de clic para reiniciar
-    document.addEventListener("touchstart", HandleRestart); // Agregar evento de toque para reiniciar
+    document.addEventListener("click", HandleClick); // Cambiar a HandleClick
+    document.addEventListener("touchstart", HandleTouchStart); // Agregar evento de toque para saltar
 
     requestAnimationFrame(GameLoop);
 }
 
 function HandleKeyDown(ev) {
-    if (ev.keyCode == 32 ) { 
+    if (ev.keyCode == 32) { 
         ev.preventDefault(); 
         if (parado) {
             RestartGame();
@@ -89,12 +89,19 @@ function HandleKeyDown(ev) {
 
 function HandleTouchStart(ev) { 
     ev.preventDefault(); 
-    Saltar();
-}
-
-function HandleRestart() {
     if (parado) {
         RestartGame();
+    } else {
+        Saltar();
+    }
+}
+
+function HandleClick(ev) {
+    ev.preventDefault();
+    if (parado) {
+        RestartGame();
+    } else {
+        Saltar();
     }
 }
 
@@ -208,8 +215,7 @@ function GanarPuntos() {
 function DetectarColision() {
     for (var i = 0; i < obstaculos.length; i++) {
         if (obstaculos[i].posX > animalPosX + animal.clientWidth) {
-            //Evadir;
-            break; //No se pueden chocar más al estar en orden
+            break;
         } else {
             if (IsCollision(animal, obstaculos[i], 0, 0, 0, 0)) {
                 GameOver();
