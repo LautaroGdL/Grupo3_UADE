@@ -122,6 +122,38 @@ img {
 
 /*------Pagina informacion------*/
 
+.header .container {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.header .navbar a {
+    position: relative;
+    padding: 10px 15px; 
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header .navbar a:hover {
+    color: #000000;
+
+    background-color: #FFD700; 
+    border-radius: 50%; 
+}
+
 
 .footer-info {
     position: flex;
