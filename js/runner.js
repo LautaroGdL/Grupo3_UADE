@@ -218,10 +218,10 @@ function GanarPuntos() {
         gameVel = 1.2;
         contenedor.classList.add("mediodia");
     } else if (score == 5) {
-        gameVel = 1.25;
+        gameVel = 1.35;
         contenedor.classList.add("tarde");
     } else if (score == 10) {
-        gameVel = 1.7;
+        gameVel = 1.55;
         contenedor.classList.add("noche");
     }
     suelo.style.animationDuration = (3 / gameVel) + "s";
