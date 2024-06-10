@@ -16,6 +16,12 @@
     font-size: 1.5em;
 }
 
+.background{
+    background-image: url('../images/quiz/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 p{
     font-size: 1.8em;
     width: auto;
@@ -114,6 +120,115 @@ img {
 /******************************************************************************************/
 
 
+/*------Pagina informacion------*/
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.header .container {
+    background: var(--white);
+    gap: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    width: auto;
+}
+
+.header h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header .navbar a {
+    position: relative;
+    padding: 10px 15px; 
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header .navbar a:hover {
+    color: #000000;
+
+    background-color: #FFD700; 
+    border-radius: 50%; 
+}
+
+.seccion-info {
+    background-color: #f3f3f3;
+    height: auto;
+    width: 1300px;
+    margin: 40px 0px;
+    border-radius: 20px;
+    padding: 40px 80px;
+    font-size: 17px;
+}
+
+.seccion-info div ul{
+    list-style: none;
+    color: #5E5E5E;
+    line-height: 2.5;
+    font-size: 17px;
+}
+
+
+.datos-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datos-info ul{
+    padding: 0;
+    margin: 0;
+}
+
+.datos-info img{
+    align-items: center;
+}
+
+.datos-infor li {
+    margin-bottom: 10px;
+}
+
+.contenedor-li{
+    list-style: circle;
+
+}
+
+
+.footer-info {
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+    padding: 1rem;
+}
+
+.footer-info .container {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--green);
+}
+
+/*------fin Pagina informacion------*/
+
+
 @media (max-width: 768px) {
     .puntos {
         font-size: 1.2em;
@@ -125,10 +240,14 @@ img {
 
     p {
         font-size: 1.4em;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     .option {
         font-size: 1.5em;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     #nextButton {
@@ -141,10 +260,14 @@ img {
 
     .result {
         font-size: 150%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     img {
         max-width: 90%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 }
 
@@ -159,10 +282,14 @@ img {
 
     p {
         font-size: 1.2em;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     .option {
         font-size: 1.2em;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     #nextButton {
@@ -175,9 +302,13 @@ img {
 
     .result {
         font-size: 120%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     img {
         max-width: 100%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 }
