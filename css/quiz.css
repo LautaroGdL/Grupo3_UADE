@@ -224,15 +224,14 @@ img {
 
 
 .footer-info {
-    position: fixed; /* Asegura que el footer esté siempre visible en la parte inferior de la ventana */
-    bottom: 0;
-    left: 0;
+    display: flex; /* Asegura que el footer esté siempre visible en la parte inferior de la ventana */
+    flex-wrap: nowrap;
     width: 100%;
     text-align: center;
     background-color: var(--white);
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
     padding: 1rem;
-    z-index: 1000; /* Asegura que el footer esté por encima del contenido del main */
 }
 
 .footer-info .container {
