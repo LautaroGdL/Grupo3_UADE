@@ -60,7 +60,7 @@
 
 .seccion-inicio {
     background-color: #f3f3f3;
-    height: 500px;
+    height: auto;
     width: 1000px;
     margin: 40px 0px;
     border-radius: 20px;
