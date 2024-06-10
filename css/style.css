@@ -100,8 +100,8 @@
 }
 
 
-.footer {
-    position: relative;
+.footer-inicio {
+    position: absolute;
     padding: 1rem;
     width: 100%;
     text-align: center;
@@ -110,10 +110,11 @@
     /* background-color: #00405c; */
 }
 
-.footer .container{
+.footer-inicio .container{
     padding: 1rem;
     text-align: center;
-    background-color: var(--white);
+    background-color: var(--green);
+    width: 100%;
     /* background-color: #00405c; */
 }
 
