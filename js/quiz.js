@@ -1,42 +1,42 @@
 //Definicion de las Preguntas
 const questions = [
     {
-        image: 'quizimg/canguro.png',
+        image: 'images/quiz/canguro.png',
         options: ['Canguro', 'Elefante', 'Gorila'],
         correctAnswer: 'Canguro'
     },
     {
-        image: 'quizimg/elefante.png',
+        image: 'images/quiz/elefante.png',
         options: ['Gorila', 'Elefante', 'Jirafa'],
         correctAnswer: 'Elefante'
     },
     {
-        image: 'quizimg/gorila.png',
+        image: 'images/quiz/gorila.png',
         options: ['Canguro', 'Gorila', 'Jirafa'],
         correctAnswer: 'Gorila'
     },
     {
-        image: 'quizimg/jirafa.png',
+        image: 'images/quiz/jirafa.png',
         options: ['Canguro', 'Jirafa', 'Panda'],
         correctAnswer: 'Jirafa'
     },
     {
-        image: 'quizimg/leon.png',
+        image: 'images/quiz/leon.png',
         options: ['Tigre', 'Leon', 'Rinoceronte'],
         correctAnswer: 'Leon'
     },
     {
-        image: 'quizimg/panda.png',
+        image: 'images/quiz/panda.png',
         options: ['Leon', 'Panda', 'Rinoceronte'],
         correctAnswer: 'Panda'
     },
     {
-        image: 'quizimg/rinoceronte.png',
+        image: 'images/quiz/rinoceronte.png',
         options: ['Tigre', 'Panda', 'Rinoceronte'],
         correctAnswer: 'Rinoceronte'
     },
     {
-        image: 'quizimg/tigre.png',
+        image: 'images/quiz/tigre.png',
         options: ['Tigre', 'Gorila', 'Jirafa'],
         correctAnswer: 'Tigre'
     }
