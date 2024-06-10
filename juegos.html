@@ -77,5 +77,18 @@
     </div>
 </footer>
 <!--Footer-->
+
+<!-- JavaScript -->
+<script>
+    document.querySelectorAll('.imagen-juego a').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevenir la acción por defecto del enlace
+            const userConfirmed = confirm('¿Desea acceder a este juego?');
+            if (userConfirmed) {
+                window.location.href = this.href; // Redirigir si el usuario acepta
+            }
+        });
+    });
+</script>
 </body>
 </html>
