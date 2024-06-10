@@ -39,7 +39,7 @@ body {
 .header h1 {
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-left: 15rem;
+    margin-left: 22rem;
 }
 
 .navbar {
@@ -83,7 +83,7 @@ body {
     transition: background-color 1s linear;
     position: relative;
     overflow: hidden;
-    margin-top: 15px;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
 }
@@ -228,108 +228,159 @@ body {
     margin-bottom: 15px;
 }
 
-.header .container {
-    background: var(--white);
-    display: flex;
-    gap: 1%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 7%;
-    width: auto;
-}
-
-.header h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    background-color: var(--green);
-    margin: 0;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
 .footer-runner .container {
-    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem; 
+    text-align: center;
     background-color: var(--green);
-    color: var(--white); 
+    color: var(--white);
 }
 
-/* Estilos para pantallas de al menos 400px de ancho */
-@media (min-width: 400px) {
-    .contenedor {
-        height: 400px; /* Ajustar altura para pantallas medianas */
-    }
-
-    .score, .game-over {
-        font-size: 24px;
-    }
-
-    .descripcion {
-        font-size: 14px;
-    }
+.toggle-menu {
+    display: none; 
 }
 
-/* Estilos para pantallas de hasta 1200px de ancho */
-@media (max-width: 1200px) {
-    .contenedor {
-        height: 500px; /* Ajustar altura para pantallas grandes */
-    }
+@media (max-width: 480px) {
 
-    .score, .game-over {
-        font-size: 24px;
-    }
-
-    .descripcion {
-        font-size: 16px;
-    }
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 600px) {
-    .contenedor {
-        width: 100%;
-        height: 280px; /* Ajustar altura para pantallas pequeñas */
-    }
-
-    .animal {
-        width: 42px;
-        height: 42px;
-        bottom: 11px;
-        left: 21px;
-    }
-
-    .cactus {
-        width: 23px;
-        height: 48px;
-        bottom: 8px;
-        left: 300px;
-    }
-
-    .nube {
-        width: 46px;
-        height: 13px;
-    }
-
-    .score {
-        font-size: 18px;
-    }
-
-    .game-over {
-        font-size: 18px;
-    }
-
-    .descripcion {
-        font-size: 12px;
-    }
+    body {
+        overflow-y: visible;  
+    } 
 
     .header h1 {
+        font-size: 15px; 
         margin-left: 0;
-        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .header .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navbar {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center; 
     }
 
     .navbar a {
-        margin: 0 8px;
-        font-size: 14px;
+        font-size: 12px;
+        display: block;
+        margin: 10px 0; 
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .header .navbar a:hover {
+        color: #000000;
+        background-color: #FFD700; 
+        border-radius: 50%; 
+    }
+
+    .contenedor {
+        padding: 8rem 0; 
+        width: 100%;
+        height: 250px; 
+        margin-top: 0; 
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .suelo {
+        width: 1000px; 
+        height: 42px;
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        background: url(../images/runner/suelo.png) repeat-x 0px 0px; 
+        background-size: 50% 42px; 
+    }
+
+    .score {
+        width: 100px;
+        height: 30px; 
+        position: absolute; 
+        top: 5px; 
+        right: 15px; 
+        z-index: 10; 
+        color: #d48872; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        font-size: 20px; 
+        font-weight: bold; 
+        text-align: right; 
+    }
+
+    .descripcion {
+        font-size: 14px; 
+        padding: 10px; 
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .descripcion p {
+        font-size: 15px; 
+        text-align: justify;
+    }
+
+    .descripcion img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .footer-runner{
+        margin-top: 5rem;
+        position: static;
+    }
+}
+    
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 15px; 
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .descripcion {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        width: auto; 
+    }
+
+    .header .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navbar {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .contenedor {
+        max-width: 920px; 
+        margin: 0 auto; 
+        padding: 0 20px; 
+    }
+
+    .footer-runner {
+        position: static; 
+        margin-top: 15px;
+        padding: 2rem;
+        width: 100%; 
     }
 }

@@ -34,15 +34,12 @@
     justify-content: space-between;
     padding: 1.5rem 7%;
     border-bottom: var(--border);
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
 }
 
 .header h1 {
     color: rgb(0, 0, 0);
     text-align: left;
+    margin-left: 23rem;
 }
 
 .header .navbar a {
@@ -58,8 +55,6 @@
     background-color: #FFD700; 
     border-radius: 50%; 
 }
-
-
 
 .main-inicio {
     display: flex;
