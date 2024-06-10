@@ -122,6 +122,56 @@ img {
 
 /*------Pagina informacion------*/
 
+
+.seccion-info {
+    background-color: #f3f3f3;
+    height: auto;
+    width: 1300px;
+    margin: 40px 0px;
+    border-radius: 20px;
+    padding: 40px 80px;
+    font-size: 17px;
+}
+
+.seccion-info div ul{
+    list-style: none;
+    color: #5E5E5E;
+    line-height: 2.5;
+    font-size: 17px;
+}
+
+
+.datos-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datos-info ul{
+    padding: 0;
+    margin: 0;
+}
+
+.datos-info img{
+    align-items: center;
+}
+
+.datos-infor li {
+    margin-bottom: 10px;
+}
+
+.contenedor-li{
+    list-style: circle;
+
+}
+
+
 .footer-info {
     position: flex;
     bottom: 0;
@@ -137,7 +187,9 @@ img {
     padding: 1rem;
     text-align: center;
     background-color: var(--green);
-} 
+}
+
+/*------fin Pagina informacion------*/
 
 
 @media (max-width: 768px) {
