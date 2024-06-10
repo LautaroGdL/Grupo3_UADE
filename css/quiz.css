@@ -224,7 +224,7 @@ img {
 
 
 .footer-info {
-    position: flex;
+    position: absolute; /* Asegura que el footer esté en la parte inferior */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -235,9 +235,14 @@ img {
 }
 
 .footer-info .container {
-    padding: 1rem;
-    text-align: center;
+    padding: 2rem;
     background-color: var(--green);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--white);
 }
 
 /*------fin Pagina informacion------*/
