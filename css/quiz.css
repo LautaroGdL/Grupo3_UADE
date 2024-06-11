@@ -104,16 +104,14 @@ img {
 /******************************************************************************************/
 .endgame-content {
     text-align: center;
-    margin-top: 2%;
-    margin-top: 2%;
+    margin: 2% auto;
 }
 
 .endgame-image {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2% auto;
     border-radius: 10px;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    background-image: url('../images/quiz/background.png');
 }
 
 .endgame-text {
