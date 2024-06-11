@@ -86,7 +86,7 @@ p{
     margin-top: 1%;
 }
 
-.result {
+#result {
     font-size: 200%;
     margin: 2% 0 1% 0;
     text-align: center;
