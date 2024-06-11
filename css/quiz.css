@@ -18,8 +18,13 @@
 
 .background{
     background-image: url('../images/quiz/background.png');
-    background-size: cover;
+    background-size:auto;
     background-repeat: no-repeat;
+}
+
+.background2{
+    background-color: #f0f0f0;
+    border-radius: 2%;
 }
 
 p{
