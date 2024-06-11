@@ -16,6 +16,16 @@
     font-size: 1.5em;
 }
 
+.questionContainer2 {
+    background-image: url('../images/quiz/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
 .questionContainer2 .background2 {
     background-color: #f0f0f0;
     border-radius: 2%;
@@ -33,16 +43,6 @@ p{
 #nextButton{
     font-size: 1.5em;
     margin-bottom: 2%;
-}
-
-.questionContainer2 {
-    background-image: url('../images/quiz/background.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
 .option {
