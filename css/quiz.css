@@ -95,6 +95,7 @@ p{
 img {
     max-width: 600px;
     margin-bottom: 2%;
+    margin-top: 2%;
     display: block; /* Para centrar la imagen */
     margin: 0 auto; /* Para centrar la imagen horizontalmente */
     border-radius: 1em;
