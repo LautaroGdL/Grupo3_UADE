@@ -23,6 +23,7 @@
 }
 
 p{
+    padding: 1%;
     font-size: 1.8em;
     width: auto;
     max-width: 600px;
@@ -30,6 +31,7 @@ p{
 
 #nextButton{
     font-size: 1.5em;
+    margin-bottom: 2%;
 }
 
 .questionContainer2{
