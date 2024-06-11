@@ -144,14 +144,14 @@ function endGame() {
     let endgameText = '';
 
     if (score >= 0 && score <= 4) {
-        endgameImage = 'quizimg/low_score_image.png';
+        endgameImage = '../images/quiz/low_score_image.png';
         endgameText = 'Sabes poco de animales. Deberías aprender mas!';
     } else if (score >= 5 && score <= 6) {
-        endgameImage = 'quizimg/medium_score_image.png';
+        endgameImage = '../images/quiz/medium_score_image.png';
         endgameText = 'Buen nivel de conocimiento. Si bien, siempre esta bueno conocer mas animales';
     } else if (score >= 7 && score <= 8) {
-        endgameImage = 'quizimg/high_score_image.png';
-        endgameText = '¡Excelente trabajo! Sabes muchisimo sobre';
+        endgameImage = '../images/quiz/high_score_image.png';
+        endgameText = '¡Excelente trabajo! Sabes muchisimo sobre animales!';
     }
 
     resultElement.innerHTML = `

@@ -97,6 +97,8 @@ img {
     border-radius: 1em;
 }
 
+
+
 /******************************************************************************************/
 .endgame-content {
     text-align: center;
@@ -123,39 +125,51 @@ img {
 /*------Pagina informacion------*/
 .header {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Asegúrate de que los elementos no necesiten envolver en pantallas pequeñas */
     width: 100%;
     margin-top: 0;
     margin-bottom: 15px;
+    text-align: center;
+    justify-content: center;
 }
 
 .header .container {
     background: var(--white);
-    gap: 1em;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
     padding: 1.5rem 7%;
-    width: auto;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header h1 {
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 1rem;
+    flex-grow: 1;
+}
+
+.header .navbar {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .header .navbar a {
-    position: relative;
-    padding: 10px 15px; 
+    padding: 10px 15px;
     display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header .navbar a:hover {
     color: #000000;
-
     background-color: #FFD700; 
     border-radius: 50%; 
 }
@@ -210,20 +224,28 @@ img {
 
 
 .footer-info {
-    position: flex;
-    bottom: 0;
-    left: 0;
+    display: flex; /* Asegura que el footer esté siempre visible en la parte inferior de la ventana */
+    flex-wrap: nowrap;
     width: 100%;
     text-align: center;
     background-color: var(--white);
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
     padding: 1rem;
 }
 
 .footer-info .container {
-    padding: 1rem;
-    text-align: center;
+    padding: 2rem;
     background-color: var(--green);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+main {
+    margin-bottom: 2%; /* Ajusta este valor según la altura de tu footer para que el contenido del main no quede oculto */
 }
 
 /*------fin Pagina informacion------*/
