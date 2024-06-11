@@ -16,15 +16,7 @@
     font-size: 1.5em;
 }
 
-.background {
-    background-image: url('../images/quiz/background.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-}
-
-.background2{
+.questionContainer2 .background2 {
     background-color: #f0f0f0;
     border-radius: 2%;
     position: relative;
@@ -44,15 +36,13 @@ p{
 }
 
 .questionContainer2 {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2em;
-    align-items: center;
-    justify-content: center;
-    margin: 2% auto;
+    background-image: url('../images/quiz/background.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
     padding-top: 2%;
     padding-bottom: 2%;
-    box-sizing: border-box;
 }
 
 .option {
