@@ -386,3 +386,82 @@ article:hover img:last-child {
 }
 
 /*------Fin Pagina Juegos------*/
+
+@media (max-width: 480px) {
+
+    body {
+        overflow-y: visible;  
+    } 
+
+    .header h1 {
+        font-size: 15px; 
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .header .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navbar {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .navbar a {
+        font-size: 12px;
+        display: block;
+        margin: 10px 0; 
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .header .navbar a:hover {
+        color: #000000;
+        background-color: #FFD700; 
+        border-radius: 50%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 15px; 
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .descripcion {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        width: auto; 
+    }
+
+    .header .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navbar {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .footer-runner {
+        position: static; 
+        margin-top: 15px;
+        padding: 2rem;
+        width: 100%; 
+    }
+}
