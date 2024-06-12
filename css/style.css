@@ -513,11 +513,11 @@ article img:last-child {
 
 .imagen-juego {
     text-align: center;
-    padding: 0 10px;
 }
 
 .imagen-juego img {
     max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -816,8 +816,7 @@ article:hover img:last-child {
     }
 
     .imagen-juego img {
-        max-width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .datos-info-pie {
