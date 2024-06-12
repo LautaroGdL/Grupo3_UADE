@@ -477,6 +477,9 @@
     list-style: none;
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 article {
@@ -698,8 +701,6 @@ article:hover img:last-child {
 
 .cart-juego {
         width: 100%;
-        max-width: 700px;
-        margin-bottom: 25px;
     }
 
     .cart-juego h1 {
@@ -796,6 +797,10 @@ article:hover img:last-child {
         margin-bottom: 1rem;
     }
 
+    .cart-juego {
+        width: 100%;
+    }
+
     .cart-juego h1 {
         font-size: 20px;
         margin-bottom: 15px;
@@ -880,6 +885,14 @@ article:hover img:last-child {
 @media (max-width: 750px) {
     .seccion-inicio {
         padding: 20px 20px;
+    }
+
+    .seccion-juegos {
+        padding: 20px 20px;
+    }
+
+    .cart-juego {
+        width: 100%;
     }
 
     .cart-juego h1 {
@@ -1046,8 +1059,7 @@ article:hover img:last-child {
     }
 
     .cart-juego {
-        width: 100%;
-        max-width: 700px;
+        width: calc(33.33% - 20px);
         margin-bottom: 25px;
     }
 
