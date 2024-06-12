@@ -165,15 +165,18 @@
 }
 
 .avatar-list li a {
+    position: relative;
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .avatar-list li a:hover {
-    color: #007bff;
+    color: #000000;
+    background-color: #FFD700;
+    border-radius: 50%;
+    padding: 10px 15px;
 }
-
 
 /**************************************/
 
