@@ -62,53 +62,120 @@
     border-radius: 10%; 
 }
 
+/*********************************************************************/
+
 .main-inicio {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .seccion-inicio {
     background-color: #f3f3f3;
-    height: auto;
-    width: 1000px;
-    margin: 40px 0px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px 0;
     border-radius: 20px;
-    padding: 40px 80px;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 .seccion-inicio div ul {
     list-style: none;
     color: #5E5E5E;
-    line-height: 4;
-    font-size: 23px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
 
 .datos-inicio {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-.titulo {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.titulo h1 {
-    font-size: 40px;
-    color: #000000;
-    font-weight: 600;
+    align-items: center;
+    gap: 20px;
 }
 
 .datos-inicio img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 20px;
-    border: #000000 2px solid;
+    border: 2px solid #000000;
 }
 
-/**************************************/
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0;
+}
+
+/************************* Tablet*************************/
+@media (min-width: 768px) {
+    .seccion-inicio {
+        padding: 40px 40px;
+    }
+
+    .datos-inicio {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .datos-inicio ul {
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    .titulo h1 {
+        font-size: 36px;
+    }
+}
+
+/*************************Celular*************************/
+@media (max-width: 767px) {
+    .seccion-inicio {
+        padding: 20px 20px;
+    }
+
+    .datos-inicio {
+        flex-direction: column;
+    }
+
+    .datos-inicio ul {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+}
+
+/*************************Celular Pantalla Muy Pequeña*************************/
+@media (max-width: 480px) {
+    .seccion-inicio {
+        padding: 20px 10px;
+    }
+
+    .datos-inicio ul {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+}
+
+
+/*********************************************************************/
 
 .footer-inicio .container {
     padding: 2rem;
