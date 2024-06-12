@@ -120,7 +120,7 @@
 }
 
 .footer-inicio .container .navbar a {
-    color: #FFD700; /* Cambiado el color */
+    color: #FFD700; /* Color del texto */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -129,12 +129,13 @@
 
 .footer-inicio .container .navbar a:hover {
     color: #000000;
-    border-color: #FFD700; /* Color de la línea de abajo */
+    border-color: #FFD700; /* Color del borde inferior al pasar el cursor */
 }
 
 .footer-inicio .container p {
     margin-top: 20px; /* Espacio entre enlaces y párrafo */
 }
+
 
 
 
