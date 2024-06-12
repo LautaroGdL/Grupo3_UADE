@@ -762,13 +762,11 @@ article:hover img:last-child {
         margin-bottom: 10px;
     }
 
-<<<<<<< HEAD
     .seccion-juegos img {
         max-width: 100%;
         margin-bottom: 1rem;
     }
 
-=======
     .datos-info-pie {
         display: flex;
         flex-direction: column;
@@ -792,7 +790,6 @@ article:hover img:last-child {
         max-width: fit-content;
     }
 
->>>>>>> 4b9049ac643d4b994b1e283b91324b71d49392d3
     .footer-inicio .container {
         padding: 1.5rem;
     }
@@ -953,4 +950,5 @@ article:hover img:last-child {
         padding: 2rem;
         width: 100%;
     }
+}
 }
