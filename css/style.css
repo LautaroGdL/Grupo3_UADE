@@ -734,6 +734,11 @@ article:hover img:last-child {
         max-height: 200px;
     }
 
+    .seccion-info {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
     .datos-info {
         flex-direction: column;
         align-items: center;
