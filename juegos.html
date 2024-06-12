@@ -114,7 +114,8 @@
 
 <!-- JavaScript -->
 <script>
-        document.querySelectorAll('.imagen-juego a').forEach(link => {
+    // Script para confirmar antes de redirigir
+    document.querySelectorAll('.imagen-juego a').forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault(); // Prevenir la acción por defecto del enlace
             const userConfirmed = confirm('¿Desea acceder a este juego?');
@@ -123,9 +124,10 @@
             }
         });
     });
-    
+
     // Script para el menú desplegable
-    const menuToggle = document.querySelector('.menu-toggle');
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
         const navbar = document.querySelector('.navbar');
 
         menuToggle.addEventListener('click', function() {
