@@ -103,24 +103,24 @@ p{
 
 
 .option:hover {
-    background-color: #f0f0f0; /* Cambiamos el color de fondo al pasar el cursor */
+    background-color: #f0f0f0;
 }
 
 .option.selected {
-    background-color: #dc3545; /* Color de fondo rojo para opción incorrecta seleccionada*/
+    background-color: #dc3545;
 }
 
 .option.correct {
-    background-color: #28a745; /* Color de fondo verde para opción correcta */
+    background-color: #28a745;
 }
 
 .option.incorrect {
-    background-color: #dc3545; /* Color de fondo rojo para opción incorrecta */
+    background-color: #dc3545;
 }
 
 #nextButton {
     display: block;
-    margin: 0 auto; /* Para centrar el botón horizontalmente */
+    margin: 0 auto;
     margin-top: 1%;
     
 }
@@ -133,8 +133,8 @@ p{
 
 img {
     max-width: 450px;
-    display: block; /* Para centrar la imagen */
-    margin: 2% auto; /* Para centrar la imagen horizontalmente */
+    display: block;
+    margin: 2% auto;
     border-radius: 1em;
     border-style:solid black 1px;
 }
@@ -165,7 +165,7 @@ img {
 /*------Pagina informacion------*/
 .header {
     display: flex;
-    flex-wrap: nowrap; /* Asegúrate de que los elementos no necesiten envolver en pantallas pequeñas */
+    flex-wrap: nowrap;
     width: 100%;
     margin-top: 0;
     margin-bottom: 15px;
@@ -264,7 +264,7 @@ img {
 
 
 .footer-info {
-    display: flex; /* Asegura que el footer esté siempre visible en la parte inferior de la ventana */
+    display: flex;
     flex-wrap: nowrap;
     width: 100%;
     text-align: center;
@@ -285,7 +285,7 @@ img {
 }
 
 main {
-    margin-bottom: 2%; /* Ajusta este valor según la altura de tu footer para que el contenido del main no quede oculto */
+    margin-bottom: 2%;
 }
 
 /*------fin Pagina informacion------*/
