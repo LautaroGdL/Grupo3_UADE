@@ -29,6 +29,10 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .header .container {
     display: flex;
     align-items: center;
@@ -585,9 +589,37 @@ article:hover img:last-child {
         margin-top: 2rem;
     }
 
-    .navbar a {
-        font-size: 12px;
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
     }
+
+    .navbar {
+        flex-direction: column;
+        display: none; /* Ocultar menú por defecto */
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar.show {
+        display: flex; /* Mostrar menú cuando esté activo */
+    }
+}
 
     .descripcion {
         font-size: 14px;
@@ -622,7 +654,7 @@ article:hover img:last-child {
     .datos-info li {
         margin-bottom: 10px;
     }
-}
+
 
 /* Pantallas medianas (max-width: 750px) */
 @media (max-width: 750px) {
