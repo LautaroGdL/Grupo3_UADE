@@ -24,6 +24,14 @@
     z-index: 1;
     padding-top: 2%;
     padding-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.questionContainer2 #question{
+    flex: 1;
+    min-width: 200px;
 }
 
 .questionContainer2 .background2 {
@@ -31,6 +39,8 @@
     border-radius: 2%;
     position: relative;
     z-index: 2;
+    flex: 2;
+    min-width: 300px;
 }
 
 p{
@@ -108,7 +118,7 @@ p{
 }
 
 img {
-    max-width: 600px;
+    max-width: 450px;
     display: block; /* Para centrar la imagen */
     margin: 2% auto; /* Para centrar la imagen horizontalmente */
     border-radius: 1em;
