@@ -153,31 +153,43 @@
     font-size: 17px;
 }
 
+/*************TESTING******************/
 
 .datos-info {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     border: 1px solid #ccc;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
-.datos-info ul{
+.datos-info ul {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
-.datos-info img{
-    align-items: center;
+.datos-info li {
+    margin-bottom: 20px;
 }
 
-.datos-infor li {
-    margin-bottom: 10px;
+.datos-info h3, .datos-info h4 {
+    margin-top: 0;
 }
+
+.datos-info img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*************TESTING******************/
 
 .contenedor-li{
     list-style: circle;
