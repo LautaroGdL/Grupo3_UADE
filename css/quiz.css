@@ -163,36 +163,43 @@ img {
 
 
 /*------Pagina informacion------*/
-.header {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-align: center;
-    justify-content: center;
+.menu-toggle {
+    display: none;
 }
 
 .header .container {
-    background: var(--white);
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
-    padding: 1.5rem 7%;
-    width: 100%;
     justify-content: space-between;
+    padding: 1.5rem 7%;
+    background: var(--white);
+    border-bottom: var(--border);
 }
 
 .header h1 {
-    color: rgb(0, 0, 0);
+    font-size: 30px;
     text-align: center;
-    margin: 0 1rem;
-    flex-grow: 1;
+    font-family: "Arial Black", sans-serif; 
+    font-weight: bold; 
+    color: #f78b1e; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.header .navbar {
-    display: flex;
-    margin-left: auto;
+
+.header .navbar a {
+    position: relative;
+    padding: 10px 15px; 
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header .navbar a:hover {
+    color: #000000;
+    background-color: #FFD700; 
+    border-radius: 10%; 
 }
 
 .navbar a {
@@ -200,18 +207,6 @@ img {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
-}
-
-.header .navbar a {
-    padding: 10px 15px;
-    display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.header .navbar a:hover {
-    color: #000000;
-    background-color: #FFD700; 
-    border-radius: 50%; 
 }
 
 .seccion-info {
@@ -263,26 +258,40 @@ img {
 }
 
 
-.footer-info {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    text-align: center;
-    background-color: var(--white);
-    margin-top: 15px;
-    margin-bottom: 0;
-    padding: 1rem;
-}
-
-.footer-info .container {
+.footer-inicio .container {
     padding: 2rem;
     background-color: var(--green);
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    flex-direction: column;
     align-items: center;
-    color: var(--white);
+    position: relative; 
+    color: var(--white); 
 }
+
+.footer-inicio .container .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-inicio .container .navbar a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-inicio .container .navbar a:hover {
+    color: #000000;
+    background-color: #FFD700;
+    border-radius: 10%;
+}
+
+.footer-inicio .container p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 
 main {
     margin-bottom: 2%;
