@@ -666,14 +666,28 @@ article:hover img:last-child {
     }
 
     .seccion-juegos .lista {
+        display: flex;
         flex-direction: column;
+        align-items: center;   
     }
 
-    .seccion-juegos img {
-        max-width: fit-content;
-        margin-bottom: 5rem;
+    .cart-juego {
+        width: 100%;
+        margin-bottom: 20px;
     }
-}
+
+    .cart-juego h1 {
+        font-size: 14px;
+    }
+
+    .cart-juego p {
+        font-size: 12px;
+    }
+
+    .imagen-juego {
+        width: 100%;
+        text-align: center;
+    }
 
 /* Pantallas pequeñas (max-width: 600px) */
 @media (max-width: 600px) {
@@ -748,6 +762,13 @@ article:hover img:last-child {
         margin-bottom: 10px;
     }
 
+<<<<<<< HEAD
+    .seccion-juegos img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+=======
     .datos-info-pie {
         display: flex;
         flex-direction: column;
@@ -771,6 +792,7 @@ article:hover img:last-child {
         max-width: fit-content;
     }
 
+>>>>>>> 4b9049ac643d4b994b1e283b91324b71d49392d3
     .footer-inicio .container {
         padding: 1.5rem;
     }
@@ -808,6 +830,14 @@ article:hover img:last-child {
 @media (max-width: 750px) {
     .seccion-inicio {
         padding: 20px 20px;
+    }
+
+    .cart-juego h1 {
+        font-size: 16px;
+    }
+
+    .cart-juego p {
+        font-size: 14px;
     }
 
     .datos-inicio {
@@ -864,6 +894,14 @@ article:hover img:last-child {
     .datos-inicio ul {
         font-size: 20px;
         line-height: 2;
+    }
+
+    .seccion-juegos .lista {
+        justify-content: space-between;
+    }
+
+    .cart-juego {
+        width: calc(33.33% - 20px);
     }
 
     .titulo h1 {
