@@ -184,9 +184,16 @@
 .datos-info img {
     display: block;
     margin-top: 10px;
-    max-width: 100%;
+    max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datos-info img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /*************TESTING******************/
