@@ -422,13 +422,15 @@
 /*------Pagina Juegos------*/
 .main-juegos {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .seccion-juegos {
     background-color: #f3f3f3;
     height: auto;
     width: 85%;
-    margin: 2% 2% auto;
+    margin: 2% auto;
     border-radius: 20px;
     padding: 40px 80px;  
 }
