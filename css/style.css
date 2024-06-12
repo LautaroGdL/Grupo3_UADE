@@ -200,12 +200,6 @@
 
 /*************TESTING******************/
 
-.contenedor-li{
-    list-style: circle;
-
-}
-
-
 .footer-info {
     position: flex;
     bottom: 0;
