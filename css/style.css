@@ -148,13 +148,32 @@
 
 .avatar-list {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    list-style-type: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .avatar-list li {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-list li a {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.avatar-list li a:hover {
+    color: #000000;
+    background-color: #FFD700;
+    border-radius: 50%;
+    padding: 10px 15px;
 }
 
 .avatar-list li img {
@@ -164,19 +183,6 @@
     margin-right: 10px;
 }
 
-.avatar-list li a {
-    position: relative;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.avatar-list li a:hover {
-    color: #000000;
-    background-color: #FFD700;
-    border-radius: 50%;
-    padding: 10px 15px;
-}
 
 /**************************************/
 
