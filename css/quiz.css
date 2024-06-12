@@ -103,7 +103,9 @@ p{
 
 
 .option:hover {
-    background-color: #f0f0f0;
+    color: #000000;
+    background-color: #FFD700; 
+    border-radius: 10%; 
 }
 
 .option.selected {
@@ -256,7 +258,6 @@ img {
     list-style: circle;
 
 }
-
 
 .footer-inicio .container {
     padding: 2rem;
