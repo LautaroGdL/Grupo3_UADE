@@ -520,6 +520,11 @@ article img:last-child {
     display: flex;
     justify-content: center;
 }
+.imagen-juego a{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 .imagen-juego img {
     max-width: 100%;
