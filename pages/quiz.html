@@ -10,18 +10,19 @@
 <body>
         <!-- Header-->
         <header class="header">
-
             <div class="container">
-                <a style="display: flex;" href="../index.html"><img src="../images/logo.png" alt="" height="50px"></a>
+                <a style="display: flex;" href="index.html"><img src="images/logo.png" alt="" height="50px"></a>
                 <h1>Elige correctamente el nombre del Animal</h1>
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+                    &#9776;
+                </button>
                 <nav class="navbar">
-                    <a href="../index.html">Inicio</a>
-                    <a href="../info.html">Información</a>
-                    <a href="../integrantes.html">Integrantes</a>
-                    <a href="../juegos.html">Juegos</a>
+                    <a href="index.html">Inicio</a>
+                    <a href="info.html">Información</a>
+                    <a href="integrantes.html">Integrantes</a>
+                    <a href="juegos.html">Juegos</a>
                 </nav>
             </div>
-            
         </header>
 
     <main>
@@ -79,6 +80,18 @@
     </div>
 </footer>
 <!--Footer-->
-    <script src="../js/quiz.js"></script>
+<script src="../js/quiz.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.navbar');
+
+        menuToggle.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+        });
+    });
+</script>
+
 </body>
 </html>
