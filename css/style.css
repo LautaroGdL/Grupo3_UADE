@@ -108,8 +108,8 @@
     background-color: var(--green);
     width: 100%;
     display: flex; 
-    justify-content: space-between; /* Cambiado a space-between */
-    align-items: center; 
+    flex-direction: column; /* Cambiado a columna */
+    align-items: center; /* Centrado vertical */
     position: relative; 
     color: var(--white); 
 }
@@ -120,17 +120,22 @@
 }
 
 .footer-inicio .container .navbar a {
-    color: var(--white);
+    color: #FFD700; /* Cambiado el color */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Línea de abajo transparente */
 }
 
 .footer-inicio .container .navbar a:hover {
     color: #000000;
-    background-color: #FFD700;
-    border-radius: 50%;
+    border-color: #FFD700; /* Color de la línea de abajo */
 }
+
+.footer-inicio .container p {
+    margin-top: 20px; /* Espacio entre enlaces y párrafo */
+}
+
 
 
 
