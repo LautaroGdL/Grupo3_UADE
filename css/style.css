@@ -18,6 +18,7 @@
 
 .navbar {
     display: flex;
+    justify-content: space-between;
 }
 
 .navbar a {
@@ -25,30 +26,32 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .header .container {
-    background: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 7%;
+    background: var(--white);
     border-bottom: var(--border);
 }
 
 .header h1 {
+    font-size: 30px;
     text-align: center;
     font-family: "Arial Black", sans-serif; 
     font-weight: bold; 
-    font-size: 30px; 
-    color: #ffffff; 
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-         -1px  1px 0 #000,
-          1px  1px 0 #000; 
-    white-space: nowrap; 
-    margin-left: 22rem;
+    color: #f78b1e; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -61,58 +64,66 @@
 
 .header .navbar a:hover {
     color: #000000;
-
     background-color: #FFD700; 
     border-radius: 10%; 
 }
 
+/*********************************************************************/
+
 .main-inicio {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .seccion-inicio {
     background-color: #f3f3f3;
-    height: auto;
-    width: 1000px;
-    margin: 40px 0px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px 0;
     border-radius: 20px;
-    padding: 40px 80px;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 .seccion-inicio div ul {
     list-style: none;
     color: #5E5E5E;
-    line-height: 4;
-    font-size: 23px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
 
 .datos-inicio {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-.titulo {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.titulo h1 {
-    font-size: 40px;
-    color: #000000;
-    font-weight: 600;
+    align-items: center;
+    gap: 20px;
 }
 
 .datos-inicio img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 20px;
-    border: #000000 2px solid;
+    border: 2px solid #000000;
 }
 
-/**************************************/
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/*********************************************************************/
 
 .footer-inicio .container {
     padding: 2rem;
@@ -255,8 +266,9 @@
 .datos-info img {
     display: block;
     margin: 2% auto;
+    width: 100%;
     max-width: 600px;
-    min-width: 600px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 2px solid #fff;
@@ -495,39 +507,149 @@ article:hover img:last-child {
 
 @media (max-width: 480px) {
     body {
-        overflow-y: visible;  
-    } 
+        overflow-y: visible;
+    }
+
+    .footer-inicio .container {
+        padding: 1rem;
+    }
+
+    .footer-inicio .container .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .avatar-list h2 {
+        font-size: 1em;
+    }
+
+    .avatar-list li {
+        margin: 5px 0;
+    }
+
+    .avatar-list li img {
+        width: 30px;
+        height: 30px;
+    }
 
     .header h1 {
-        font-size: 15px; 
+        font-size: 15px;
         margin-left: 0;
         margin-top: 2rem;
     }
 
     .header .container {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .navbar {
-        margin-top: 10px;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
+        margin-top: 10px;
     }
 
     .navbar a {
         font-size: 12px;
-        display: block;
-        margin: 10px 0; 
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
+        margin: 10px 0;
     }
 
     .header .navbar a:hover {
-        color: #000000;
-        background-color: #FFD700; 
-        border-radius: 50%; 
+        border-radius: 50%;
+    }
+
+    .datos-inicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .datos-inicio img {
+        max-height: 150px;
+    }
+
+    .seccion-info {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .datos-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .datos-info > ul {
+        padding: 0;
+    }
+
+    .datos-info p,
+    .datos-info h3,
+    .datos-info h4 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    .datos-info img {
+        height: auto;
+        max-width: fit-content;
+    }
+
+    .seccion-juegos .lista {
+        flex-direction: column;
+    }
+
+    .seccion-juegos img {
+        max-width: fit-content;
+        margin-bottom: 5rem;
+    }
+}
+
+/* Pantallas pequeñas (max-width: 600px) */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 15px;
+        margin: 1% auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navbar {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
     }
 
     .datos-inicio {
@@ -536,151 +658,164 @@ article:hover img:last-child {
     }
 
     .datos-inicio ul {
-        width: 100%;
+        text-align: justify;
     }
 
-    .datos-inicio img {
-        max-height: 150px;
-    }
-
-    .datos-inicio ul,
-    .datos-inicio img {
-        flex: 1 1 100%;
-    }
-
-    .seccion-info {
-        width: 100%;
-        padding: 10px;
+    .datos-inicio .logo-inicio {
+        max-height: 200px;
     }
 
     .datos-info {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .datos-info > ul {
-        flex: 1;
-        padding: 0;
-    }
-
-    .datos-info p,
-    .datos-info h3,
-    .datos-info h4 {
-        max-width: 100%; 
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .datos-info img {
-        max-width: fit-content;
-        height: auto;
-    }
-
-    .datos-info ul {
-        padding-left: 20px;
-    }
-
-    .datos-info li {
-        margin-bottom: 5px;
-    }
-
-    .datos-info h4 {
-        font-size: 16px;
-    }
-
-    .seccion-juegos .lista {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .seccion-juegos img {
-        max-width: fit-content;
-        margin-bottom: 5rem;
-    }
-    
-}
-
-
-@media (max-width: 600px) {
-    .header h1 {
-        font-size: 15px; 
-        margin-left: 0;
-        margin-top: 2rem;
-    }
-
-    .navbar a {
-        font-size: 12px;
-    }
-
-    .descripcion {
-        font-size: 14px; 
-    }
-
-    .titulo h1 {
-        font-size: 24px;
-    }
-
-    .datos-inicio{
         flex-direction: column;
         align-items: center;
-    }
-
-    .datos-inicio ul {
-        text-align: justify;
-    }
-    
-    .datos-inicio img {
-        max-height: 200px; 
-    }
-
-    .datos-info{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .datos-info img {
-        max-height: 200px; 
     }
 
     .datos-info li {
         margin-bottom: 10px;
     }
-    
+
+    .footer-inicio .container {
+        padding: 1.5rem;
+    }
+
+    .footer-inicio .container .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-inicio .container .navbar a {
+        padding: 8px 12px;
+    }
+
+    .avatar-list h2 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .avatar-list ul {
+        gap: 10px;
+    }
+
+    .avatar-list li {
+        margin: 0;
+    }
+
+    .avatar-list li img {
+        width: 35px;
+        height: 35px;
+    }
 }
 
-@media (max-width: 1200px) {
-    .navbar {
-        width: auto; 
+/* Pantallas medianas (max-width: 750px) */
+@media (max-width: 750px) {
+    .seccion-inicio {
+        padding: 20px 20px;
     }
 
-    .header .container {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .navbar {
-        margin-top: 10px;
+    .datos-inicio {
         flex-direction: column;
-        align-items: center; 
+    }
+
+    .datos-inicio ul {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    .footer-inicio .container {
+        padding: 1rem;
+    }
+
+    .footer-inicio .container .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .avatar-list h2 {
+        font-size: 1em;
+    }
+
+    .avatar-list li {
+        margin: 5px 0;
+    }
+
+    .avatar-list li img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+/* Pantallas grandes (min-width: 900px) */
+@media (min-width: 900px) {
+    .seccion-inicio {
+        padding: 40px 40px;
+    }
+
+    .datos-inicio {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .datos-inicio ul {
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    .titulo h1 {
+        font-size: 36px;
+    }
+    .footer-inicio .container {
+        padding: 2rem;
+    }
+
+    .footer-inicio .container .navbar {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .avatar-list h2 {
+        font-size: 1.2em;
+    }
+
+    .avatar-list li {
+        margin: 0 15px;
+    }
+
+    .avatar-list li img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Pantallas grandes (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
     }
 
     .titulo h1 {
         font-size: 20px;
     }
 
-    .datos-inicio img {
-        height: 200px; 
-    }
-
-    .datos-info {
-        max-width: 100%;
-    }
-
     .footer-runner {
-        position: static; 
+        position: static;
         margin-top: 15px;
         padding: 2rem;
-        width: 100%; 
+        width: 100%;
     }
 }
