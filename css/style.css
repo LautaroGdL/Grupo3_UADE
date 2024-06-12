@@ -697,34 +697,63 @@ article:hover img:last-child {
         max-width: fit-content;
     }
 
+
+/*----Media: Juegos----*/
     .seccion-juegos {
         padding: 20px 10px;
         width: 90%;
     }
 
-    .seccion-juegos .lista {
+    .main-juegos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista li {
+        list-style: none;
+        padding: 0;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;   
+        align-items: center;        
     }
 
     .cart-juego {
         width: 100%;
-    }
+        border: 2px solid black;
+        border-radius: 2rem;
+        padding: 20px;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
+        }
 
     .cart-juego h1 {
         font-size: 18px;
         margin-bottom: 10px;
-    }
+        padding: 10px;
+        text-align: center;
+        width: 100%; 
+        box-sizing: border-box;
+}
 
     .cart-juego p {
         font-size: 14px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: justify;
+        width: 100%; 
+        box-sizing: border-box; 
+}
+
+    .imagen-juego {
+        width: 100%;
+        max-width: 100%;
     }
 
     .imagen-juego img {
+        width: 100%;
         max-width: 100%;
-        margin-bottom: 10px;
+        height: auto;
     }
 }
 
@@ -807,7 +836,7 @@ article:hover img:last-child {
     }
 
     .cart-juego {
-        width: 100%;
+        width: calc(33.33% - 20px); 
     }
 
     .cart-juego h1 {
@@ -820,8 +849,15 @@ article:hover img:last-child {
         margin-bottom: 1rem;
     }
 
+    .imagen-juego {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .imagen-juego img {
-        margin-bottom: 10px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     .datos-info-pie {
@@ -1081,9 +1117,15 @@ article:hover img:last-child {
         margin-bottom: 30px;
     }
 
-    .imagen-juego img {
+    .imagen-juego {
+        width: 100%;
         max-width: 100%;
-        margin-bottom: 30px;
+    }
+
+    .imagen-juego img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
 
