@@ -183,7 +183,8 @@
 
 .datos-info img {
     display: block;
-    margin: 2% auto 0;
+    margin: 0 auto;
+    padding: 2%;
     max-width: 600px;
     min-width: 600px;
     border-radius: 8px;
