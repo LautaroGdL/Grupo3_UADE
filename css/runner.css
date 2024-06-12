@@ -57,6 +57,10 @@ body {
     font-weight: bold;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .header .navbar a {
     position: relative;
     padding: 10px 15px; 
@@ -345,13 +349,39 @@ body {
     
 @media (max-width: 600px) {
     .header h1 {
-        font-size: 15px; 
-        margin-left: 0;
-        margin-top: 2rem;
+        font-size: 15px;
+        margin: 1% auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navbar {
+        flex-direction: column;
+        display: none;
+        width: 100%;
     }
 
     .navbar a {
-        font-size: 12px;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar.show {
+        display: flex;
     }
 
     .descripcion {

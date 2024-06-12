@@ -14,6 +14,9 @@
         <div class="container">
             <a style="display: flex;" href="index.html"><img src="../images/logo.png" alt="" height="50px"></a>
             <h1><b>Corre hasta donde puedas</b></h1>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                &#9776;
+            </button>
             <nav class="navbar">
                 <a href="../index.html">Inicio</a>
                 <a href="../info.html">Información</a>
@@ -47,5 +50,16 @@
     </div>
 </footer>
 <!--Footer-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.navbar');
+
+        menuToggle.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+        });
+    });
+</script>
 </body>
 </html>

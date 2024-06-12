@@ -280,6 +280,52 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.datos-info-pie {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.datos-info-pie div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.datos-info-pie h3 {
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Arial Black", sans-serif; 
+    font-weight: bold; 
+    color: #f78b1e; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.datos-info-pie li {
+    margin-bottom: 10px;
+}
+
+.datos-info-pie li p {
+    text-align: justify;
+    margin: 0;
+}
+
+.roles {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*************TESTING******************/
 
 .footer-info {
@@ -596,6 +642,29 @@ article:hover img:last-child {
         max-width: fit-content;
     }
 
+    .datos-info-pie {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .datos-info-pie > ul {
+        padding: 0;
+    }
+
+    .datos-info-pie p,
+    .datos-info-pie h3,
+    .datos-info-pie h4 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    .datos-info-pie img {
+        height: auto;
+        max-width: fit-content;
+    }
+
     .seccion-juegos .lista {
         flex-direction: column;
     }
@@ -672,6 +741,29 @@ article:hover img:last-child {
 
     .datos-info li {
         margin-bottom: 10px;
+    }
+
+    .datos-info-pie {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .datos-info-pie > ul {
+        padding: 0;
+    }
+
+    .datos-info-pie p,
+    .datos-info-pie h3,
+    .datos-info-pie h4 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    .datos-info-pie img {
+        height: auto;
+        max-width: fit-content;
     }
 
     .footer-inicio .container {
