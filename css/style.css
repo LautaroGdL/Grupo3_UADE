@@ -137,20 +137,16 @@
     margin-top: 20px;
 }
 
-.footer-additional {
-    margin-top: 20px;
-}
-
-.footer-additional h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
 .avatar-list {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.avatar-list h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .avatar-list li {
