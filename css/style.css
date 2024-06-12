@@ -152,7 +152,7 @@
 .avatar-list ul {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
     padding: 0;
     margin: 0;
