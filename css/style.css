@@ -265,8 +265,9 @@
 .datos-info img {
     display: block;
     margin: 2% auto;
+    width: 100%;
     max-width: 600px;
-    min-width: 600px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 2px solid #fff;
@@ -638,17 +639,13 @@ article:hover img:last-child {
         text-align: justify;
     }
 
-    .datos-inicio img {
+    .datos-inicio .logo-inicio {
         max-height: 200px;
     }
 
     .datos-info {
         flex-direction: column;
         align-items: center;
-    }
-
-    .datos-info img {
-        max-height: 200px;
     }
 
     .datos-info li {
