@@ -159,6 +159,14 @@
     font-weight: bold;
 }
 
+.footer-additional ul li img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
 /**************************************/
 
 
