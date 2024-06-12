@@ -175,6 +175,7 @@
 
 .datos-info li {
     margin-bottom: 20px;
+    list-style: none;
 }
 
 .datos-info h3, .datos-info h4 {
