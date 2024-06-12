@@ -172,7 +172,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     display: flex;
     align-items: center;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 10px;
 }
 
@@ -180,7 +180,6 @@
     color: #000000;
     background-color: #FFD700;
     border-radius: 10%;
-    padding: 10px;
 }
 
 .avatar-list li img {
