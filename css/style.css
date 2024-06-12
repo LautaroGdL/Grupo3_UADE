@@ -686,9 +686,9 @@ article:hover img:last-child {
     }
 
     .seccion-juegos {
-        padding: 30px 30px;
+        padding: 20px 10px;
+        width: 90%;
     }
-
 
     .seccion-juegos .lista {
         display: flex;
@@ -703,18 +703,18 @@ article:hover img:last-child {
     }
 
     .cart-juego h1 {
-        font-size: 26px;
-        margin-bottom: 25px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .cart-juego p {
-        font-size: 20px;
-        margin-bottom: 30px;
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 
     .imagen-juego img {
         max-width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
 
@@ -796,6 +796,21 @@ article:hover img:last-child {
         margin-bottom: 1rem;
     }
 
+    .cart-juego h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .cart-juego p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .imagen-juego img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
     .datos-info-pie {
         display: flex;
         flex-direction: column;
@@ -868,11 +883,18 @@ article:hover img:last-child {
     }
 
     .cart-juego h1 {
-        font-size: 16px;
+        font-size: 22px;
+        margin-bottom: 15px;
     }
 
     .cart-juego p {
-        font-size: 14px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .imagen-juego img {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
     .datos-inicio {
@@ -931,12 +953,30 @@ article:hover img:last-child {
         line-height: 2;
     }
 
-    .seccion-juegos .lista {
-        justify-content: space-between;
+    .seccion-juegos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .cart-juego {
         width: calc(33.33% - 20px);
+        margin-bottom: 30px;
+    }
+
+    .cart-juego h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .cart-juego p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .imagen-juego img {
+        max-width: 100%;
+        margin-bottom: 25px;
     }
 
     .titulo h1 {
@@ -999,6 +1039,31 @@ article:hover img:last-child {
     .datos-integrantes img {
         width: 100%;
         max-width: 400px;
+    }
+    
+    .seccion-juegos {
+        padding: 30px 30px;
+    }
+
+    .cart-juego {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 25px;
+    }
+
+    .cart-juego h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .cart-juego p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .imagen-juego img {
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 }
 
