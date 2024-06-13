@@ -115,14 +115,17 @@ p{
 
 .option.selected {
     background-color: #dc3545;
+    width: 100%;
 }
 
 .option.correct {
     background-color: #28a745;
+    width: 100%;
 }
 
 .option.incorrect {
     background-color: #dc3545;
+    width: 100%;
 }
 
 #nextButton {
