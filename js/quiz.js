@@ -135,6 +135,8 @@ function showNextQuestion() {
 
 //Funcion activada alfinal del juego
 function endGame() {
+    const questionContainer2 = document.querySelector('.questionContainer2');
+    questionContainer2.style.display = 'none';
     questionElement.style.display = 'none';
     optionsElement.style.display = 'none';
     nextButton.style.display = 'none';
@@ -166,13 +168,13 @@ function endGame() {
     `;
 
     document.getElementById('instruction').style.display = 'none';
-
-//*****************************************************************************************************************
 }
 
-
-//Funcion del reinicio del juego
+// Actualiza la función de reinicio para mostrar el contenedor nuevamente
 function restartGame() {
+    const questionContainer2 = document.querySelector('.questionContainer2'); // Selecciona el contenedor
+    questionContainer2.style.display = 'grid'; // Muestra el contenedor
+
     currentQuestionIndex = 0;
     score = 0;
     scoreElement.textContent = 'Puntaje: 0'; // Reiniciamos el puntaje
@@ -182,7 +184,6 @@ function restartGame() {
     restartButton.style.display = 'none';
     document.getElementById('instruction').style.display = 'block';
 }
-
 
 
 
