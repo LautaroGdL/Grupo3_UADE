@@ -195,6 +195,9 @@ img {
     margin-right: auto;
 }
 
+.menu-toggle {
+    display: none;
+}
 
 .header .navbar a {
     position: relative;
@@ -351,9 +354,7 @@ img {
     margin-right: 10px;
 }
 
-.menu-toggle {
-    display: none;
-}
+
 
 /*------fin Pagina informacion------*/
 @media (max-width: 480px) {
@@ -382,7 +383,7 @@ img {
     .header .navbar a:hover {
         border-radius: 50%;
     }
-    
+  
     .puntos {
         font-size: 1em;
     }
@@ -424,7 +425,7 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header h1 {
         font-size: 15px;
         margin: 1% auto;
