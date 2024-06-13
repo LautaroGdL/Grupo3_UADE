@@ -108,17 +108,17 @@ p{
 
 .option.selected {
     background-color: #dc3545;
-    width: 100%;
+    max-width: fit-content;
 }
 
 .option.correct {
     background-color: #28a745;
-    width: 100%;
+    max-width: fit-content;
 }
 
 .option.incorrect {
     background-color: #dc3545;
-    width: 100%;
+    max-width: fit-content;
 }
 
 #nextButton {
