@@ -78,6 +78,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2% auto;
 }
 
 .background2 #instruction {
@@ -118,8 +119,7 @@ p{
 }
 
 #restartButton {
-    margin: 0 auto;
-    margin-top: 1%;
+    margin: 1% auto;
 }
 
 .option {
@@ -136,29 +136,23 @@ p{
 .option:hover {
     color: #000000;
     background-color: #FFD700; 
-    max-width: 100%;
 }
 
 .option.selected {
     background-color: #dc3545;
-    max-width: 100%;
 }
 
 .option.correct {
     background-color: #28a745;
-    max-width: 100%;
 }
 
 .option.incorrect {
     background-color: #dc3545;
-    max-width: 100%;
 }
 
 #nextButton {
     display: block;
-    margin: 0 auto;
-    margin-top: 1%;
-    
+    margin: 1% auto;    
 }
 
 #result {
@@ -172,7 +166,7 @@ img {
     display: block;
     margin: 2% auto;
     border-radius: 1em;
-    border-style:solid black 1px;
+    border: 1px solid black;
 }
 
 
@@ -192,8 +186,7 @@ img {
 
 .endgame-text {
     font-size: 1.5em;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2% 0;
 }
 /******************************************************************************************/
 
@@ -220,8 +213,7 @@ img {
     color: #f78b1e; 
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     white-space: nowrap;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .menu-toggle {
@@ -272,8 +264,7 @@ img {
     align-items: center;
     border: 1px solid #ccc;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -327,8 +318,7 @@ img {
 
 .footer-inicio .container p {
     font-size: 16px;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2% 0;;
 }
 
 
@@ -370,27 +360,27 @@ img {
     border-radius: 10px;
 }
 
-.avatar-list li a:hover {
-    color: #000000;
-    background-color: #FFD700;
-    border-radius: 10%;
-}
+
 
 .avatar-list li img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    border: 2px solid #FFD700;
+    transition: border-color 0.3s ease;
+
 }
 
-
+.avatar-list li a:hover {
+    color: #000000;
+}
 
 /*------fin Pagina informacion------*/
 @media (max-width: 480px) {
     .header h1 {
-        font-size: 15px;
-        margin-left: 0;
-        margin-top: 2rem;
+        font-size: 20px;
+        text-align: center;
     }
 
     .header .container {
@@ -401,18 +391,24 @@ img {
     .navbar {
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
     }
 
     .navbar a {
-        font-size: 12px;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .header .navbar a:hover {
         border-radius: 50%;
     }
   
+    .seccion-info {
+        padding: 10px 20px;
+    }
+
+    .datos-info {
+        padding: 10px;
+    }
+
     .puntos {
         font-size: 1em;
     }
@@ -471,6 +467,26 @@ img {
         max-width: 100%;
         margin-left: 1%;
         margin-right: 1%;
+    }
+    .footer-inicio .container {
+        padding: 0.5rem;
+    }
+
+    .avatar-list h2 {
+        font-size: 0.8em;
+    }
+
+    .avatar-list ul {
+        gap: 5px;
+    }
+
+    .avatar-list li a {
+        padding: 2px 5px;
+    }
+
+    .avatar-list li img {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -571,6 +587,61 @@ img {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .questionContainer2 {
+        grid-template-columns: 1fr;
+        padding: 2%;
+    }
+
+    .header .container {
+        padding: 1.5rem 5%;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+    }
+
+    .seccion-info {
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .datos-info {
+        padding: 15px;
+    }
+
+    .datos-info img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .footer-inicio .container {
+        padding: 1rem;
+    }
+
+    .avatar-list h2 {
+        font-size: 1em;
+    }
+
+    .avatar-list ul {
+        gap: 10px;
+    }
+
+    .avatar-list li a {
+        padding: 5px 10px;
+    }
+
+    .avatar-list li img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 @media (max-width: 900px) {
     .questionContainer2 #question img {
        max-width: 100%;
@@ -599,4 +670,16 @@ img {
     flex-direction: column;
     align-items: center;
 }
+}
+
+@media screen and (max-width: 1300px) {
+    .seccion-info {
+        width: 90%;
+        padding: 30px 60px;
+    }
+
+    .datos-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
