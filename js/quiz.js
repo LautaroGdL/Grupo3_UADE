@@ -137,8 +137,6 @@ function endGame() {
     optionsElement.textContent = '';
     nextButton.style.display = 'none';
     restartButton.style.display = 'block';
-    resultElement.textContent = `Fin del juego. Puntuación final: ${score} / ${questions.length}`;
-    document.getElementById('instruction').style.display='none';
 //***************************************************************************************************************** */
     let endgameImage = '';
     let endgameText = '';
@@ -161,6 +159,9 @@ function endGame() {
         </div>
         Fin del juego. Puntuación final: ${score} / ${questions.length}
     `;
+
+    document.getElementById('instruction').style.display = 'none';
+
 //*****************************************************************************************************************
 }
 
@@ -174,7 +175,10 @@ function restartGame() {
     resultElement.textContent = '';
     nextButton.style.display = 'block';
     restartButton.style.display = 'none';
+    document.getElementById('instruction').style.display = 'block';
 }
+
+
 
 
 // Agregar eventos click a los botones
