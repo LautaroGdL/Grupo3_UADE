@@ -439,6 +439,30 @@ img {
         cursor: pointer;
     }
 
+    .navbar {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+
     .puntos {
         font-size: 1.2em;
     }
