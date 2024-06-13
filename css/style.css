@@ -462,6 +462,8 @@
 
 .cart-juego h1 span {
     color: #f78b1e;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart-juego p {
