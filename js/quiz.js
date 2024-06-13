@@ -133,11 +133,14 @@ function showNextQuestion() {
 
 //Funcion activada alfinal del juego
 function endGame() {
-    questionElement.textContent = '';
-    optionsElement.textContent = '';
+    questionElement.style.display = 'none';
+    optionsElement.style.display = 'none';
     nextButton.style.display = 'none';
     restartButton.style.display = 'block';
-//***************************************************************************************************************** */
+
+    resultElement.textContent = `Fin del juego. Puntuación final: ${score} / ${questions.length}`;
+    
+
     let endgameImage = '';
     let endgameText = '';
 
