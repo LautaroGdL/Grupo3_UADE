@@ -85,7 +85,7 @@ p{
 #nextButton:hover, #restartButton:hover {
     color: #000000;
     background-color: #FFD700;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #restartButton {
