@@ -356,9 +356,88 @@ img {
 }
 
 /*------fin Pagina informacion------*/
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 15px;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
 
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .header .navbar a:hover {
+        border-radius: 50%;
+    }
+    
+    .puntos {
+        font-size: 1em;
+    }
+
+    .task {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .option {
+        font-size: 1.2em;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #nextButton {
+        font-size: 1em;
+    }
+
+    #restartButton {
+        font-size: 1em;
+    }
+
+    .result {
+        font-size: 120%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    img {
+        max-width: 100%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
 
 @media (max-width: 768px) {
+    .header h1 {
+        font-size: 15px;
+        margin: 1% auto;
+    }
+    
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
     .puntos {
         font-size: 1.2em;
     }
@@ -400,44 +479,9 @@ img {
     }
 }
 
-@media (max-width: 480px) {
-    .puntos {
-        font-size: 1em;
-    }
-
-    .task {
-        font-size: 1em;
-    }
-
-    p {
-        font-size: 1.2em;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-
-    .option {
-        font-size: 1.2em;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-
-    #nextButton {
-        font-size: 1em;
-    }
-
-    #restartButton {
-        font-size: 1em;
-    }
-
-    .result {
-        font-size: 120%;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-
-    img {
-        max-width: 100%;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
+@media (max-width: 1200px) {
+    .header .container {
+    flex-direction: column;
+    align-items: center;
+}
 }
