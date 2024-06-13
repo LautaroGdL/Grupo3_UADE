@@ -27,8 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5% auto;
 }
 
 .questionContainer2 #question{
@@ -51,15 +50,16 @@
 }
 
 .questionContainer2 .background2 #instruction {
-    margin: 0;
     padding-bottom: 1rem;
     max-width: 580px;
+    margin: 2% auto;
 }
 
 .questionContainer2 .background2 #options {
     width: 100%;
     min-width: 100px;
     max-width: 100px;
+    margin: 2% auto;
 }
 
 p{
