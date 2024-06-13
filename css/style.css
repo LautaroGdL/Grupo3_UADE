@@ -442,6 +442,11 @@
     justify-content: space-between;
 }
 
+.cart-juego{
+    border: 2px solid black;
+    border-radius: 2%;
+}
+
 .cart-juego h1 {
     display: flex;
     justify-content: center;
@@ -455,6 +460,7 @@
 .cart-juego h1 a {
     text-decoration: none;
     color: inherit;
+    transition: all 0.3s ease;
 }
 
 .cart-juego h1 span {
@@ -462,12 +468,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    transition: all 0.3s ease;
 }
 
 .cart-juego h1 a:hover span {
     color: #000000;
-    background-color: #FFD700;
-    border-radius: 10%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
 }
 
 .cart-juego p {

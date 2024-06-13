@@ -37,13 +37,15 @@
 }
 
 .questionContainer2 .background2 {
-    background-color: #ffffff;
+    background-color: #F3F3F3;
+    margin: 2% auto;
     border-radius: 2%;
     position: relative;
     z-index: 2;
     flex: 2;
-    min-width: 300px;
-    max-width: 100%;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -56,8 +58,8 @@
 
 .questionContainer2 .background2 #options {
     width: 100%;
-    min-width: 20px;
-    max-width: 25px;
+    min-width: 100px;
+    max-width: 100px;
 }
 
 p{
@@ -100,8 +102,8 @@ p{
     border-radius: 1em;
     transition: background-color 0.3s ease;
     font-size: 2em;
-    width: auto;
-    max-width: none;
+    width: 100px;
+    max-width: 100%;
 }
 
 
