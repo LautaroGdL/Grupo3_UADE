@@ -378,13 +378,12 @@ img {
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
-    border: 2px solid #FFD700;
     transition: border-color 0.3s ease;
-
 }
 
 .avatar-list li a:hover {
     color: #000000;
+    background-color: #FFD700; 
 }
 
 /*------fin Pagina informacion------*/
