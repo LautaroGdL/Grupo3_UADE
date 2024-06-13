@@ -472,8 +472,7 @@
 }
 
 .seccion-juegos h1{
-    border: 2px dashed black;
-    border-radius: 2rem;
+    font-weight: bold;
     padding: 1rem;
     margin-bottom: 1rem;
     text-align: center;
