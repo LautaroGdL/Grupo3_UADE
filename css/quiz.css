@@ -41,7 +41,7 @@
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 2% auto;
-    max-width: 450px;
+    max-width: 100%;
 }
 
 .questionContainer2 .background2 #instruction {
