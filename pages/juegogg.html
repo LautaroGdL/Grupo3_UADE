@@ -5,15 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savelife</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
     <link rel="stylesheet" href="../css/stylegg.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <script type="text/javascript" src="../js/palabras.js" defer></script>
     <script type="text/javascript" src="../js/juegog.js" defer></script>
 </head>
+
 <body>
-    <img src="images/portada.jpg" alt="" width="50%">
+    <header class="header">
+        <div class="container">
+            <a style="display: flex;" href="index.html"><img src="../images/logo.png" alt="" height="50px"></a>
+            <h1><b>Ahorcado</b></h1>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                &#9776;
+            </button>
+            <nav class="navbar">
+                <a href="../index.html">Inicio</a>
+                <a href="../info.html">Información</a>
+                <a href="../integrantes.html">Integrantes</a>
+                <a href="../juegos.html">Juegos</a>
+            </nav>
+            <button class="toggle-menu" id="toggle-menu">&#9776;</button>
+        </div>
+    </header>
+
+
+
+    <img src="../images/portada.jpg" alt="" width="50%">
     <h1>Descubre los animales!</h1>
     
     <div>
@@ -24,5 +43,42 @@
     <div id="wordContainer"></div>
     <button id="startButton">Empieza</button>
     <div id="gameMessages"></div>
+
+    
+<footer class="footer-runner">
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="juegos.html">Juegos</a>
+        </nav>
+        <p>© UADE 2024 - Sitio web educativo creado por estudiantes de Diseño y Desarrollo Web</p>
+       
+        <div class="avatar-list">
+            <h2>Contactos:</h2>
+            <ul>
+                <li>
+                    <a href="https://lautarogdl.github.io/Ficha_UADE/" target="_blank">
+                        <img src="../images/foto-lautaro.jpeg" alt="Avatar de Lautaro Garcia De Leo">
+                        Lautaro Garcia De Leo
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ramiroaguerre.github.io/Ficha-Personal/" target="_blank">
+                        <img src="../images/foto-ramiro.jpg" alt="Avatar de Ramiro Aguerre">
+                        Ramiro Aguerre
+                    </a>
+                </li>
+                <li>
+                    <a href="https://guisella2906.github.io/parcial1/" target="_blank">
+                        <img src="../images/foto-gisella.jpeg" alt="Avatar de Guisella Anahi Insfran Sanabria">
+                        Guisella Anahi Insfran Sanabria
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
