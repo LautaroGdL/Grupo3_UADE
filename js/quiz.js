@@ -100,7 +100,9 @@ function checkAnswer(selectedOption) {
     });
 
     if (selectedOption === currentQuestion.correctAnswer) {
-        score++;
+        if (score < 8) {
+            score++;
+        }
         scoreElement.textContent = `Puntaje: ${score}`; // Actualizamos el puntaje
         resultElement.textContent = '¡Respuesta correcta!';
     } else {
