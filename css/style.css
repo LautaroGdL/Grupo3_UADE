@@ -441,18 +441,9 @@
     justify-content: space-between;
 }
 
-.cart-juego {
-    border: 2px solid black;
-    border-radius: 2rem;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 600px;
-}
-
 .cart-juego h1 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     border: 2px solid black;
     border-radius: 2rem;
@@ -461,11 +452,22 @@
     font-weight: bold;
 }
 
+.cart-juego h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .cart-juego h1 span {
     color: #f78b1e;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.cart-juego h1 a:hover span {
+    color: #000000;
+    background-color: #FFD700;
+    border-radius: 10%;
 }
 
 .cart-juego p {
