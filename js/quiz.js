@@ -174,15 +174,17 @@ function endGame() {
 function restartGame() {
     const questionContainer2 = document.querySelector('.questionContainer2'); // Selecciona el contenedor
     questionContainer2.style.display = 'grid'; // Muestra el contenedor
+    questionElement.style.display = 'block'; // Muestra el elemento de la pregunta
+    optionsElement.style.display = 'block'; // Muestra el elemento de las opciones
+    nextButton.style.display = 'block'; // Muestra el botón de siguiente
+    document.getElementById('instruction').style.display = 'block'; // Muestra las instrucciones
 
     currentQuestionIndex = 0;
     score = 0;
     scoreElement.textContent = 'Puntaje: 0'; // Reiniciamos el puntaje
-    showQuestion();
-    resultElement.textContent = '';
-    nextButton.style.display = 'block';
-    restartButton.style.display = 'none';
-    document.getElementById('instruction').style.display = 'block';
+    showQuestion(); // Muestra la primera pregunta
+    resultElement.textContent = ''; // Limpia el resultado anterior
+    restartButton.style.display = 'none'; // Oculta el botón de reinicio
 }
 
 
