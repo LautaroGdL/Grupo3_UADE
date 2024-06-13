@@ -104,22 +104,22 @@ p{
 .option:hover {
     color: #000000;
     background-color: #FFD700; 
-    max-width: fit-content;
+    max-width: 100%;
 }
 
 .option.selected {
     background-color: #dc3545;
-    max-width: fit-content;
+    max-width: 100%;
 }
 
 .option.correct {
     background-color: #28a745;
-    max-width: fit-content;
+    max-width: 100%;
 }
 
 .option.incorrect {
     background-color: #dc3545;
-    max-width: fit-content;
+    max-width: 100%;
 }
 
 #nextButton {
