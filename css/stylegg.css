@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 .hidden {
     color: transparent;
 }
@@ -5,12 +8,63 @@
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: 'SF Pixelate', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.header {
+    width: 100%;
+    background: white;
+    padding: 1.5rem 7%;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #f78b1e; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    margin-left: 22rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.header .navbar a {
+    position: relative;
+    padding: 10px 15px; 
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header .navbar a:hover {
+    color: #000000;
+    background-color: #FFD700; 
+    border-radius: 50%; 
+}
+
 
 #wordContainer {
     margin-top: 20px;
@@ -36,7 +90,6 @@ body {
 #startButton {
     margin-top: 20px;
     appearance: none;
-    font-family: 'SF Pixelate', sans-serif;
     border: none;
     width: 300px;
     padding: 10px;
@@ -48,64 +101,159 @@ body {
     cursor: pointer;
 }
 
-
 #gameMessages{
     padding: 5px;
     font-weight: 600;
     font-size: 20px;
-    justify-content: center;
     text-align: justify;
 }
 
 
-
-.footer-juego {
+.footer-runner {
+    position: flex;
+    bottom: 0;
+    left: 0;
     width: 100%;
     text-align: center;
-    background-color: white;
-    margin: 0;
-    padding: 1rem;
-    bottom: 0; 
-}
-
-.footer-juego .container {
-    padding: 1rem;
-    text-align: center;
     background-color: #20a268;
+    margin-top: 3rem;
+    padding: 1rem;
 }
 
+.footer-runner .container {
+    padding: 2rem;
+    background-color: #20a268;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    color: white; 
+}
 
-@media (max-width: 600px) {
-    #wordContainer {
-        margin-top: 20px;
-    }
-    img {
-        width:90%  
-    }
+.footer-runner .container .navbar {
+    display: flex;
+    gap: 20px;
+}
 
-    .letter {
-        margin: 0 5px;
-        font-size: calc(2rem + 4vw); /* Aumenta el tamaño de la fuente en pantallas pequeñas */
-    }
+.footer-runner .container .navbar a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.footer-runner .container .navbar a:hover {
+    color: #000000;
+    background-color: #FFD700;
+    border-radius: 10%;
+}
+
+.footer-runner .container p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.avatar-list {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.avatar-list h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-right: 2%;
+}
+
+.avatar-list ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.avatar-list li {
+    display: flex;
+    align-items: center;
+    margin: 0 15px,
+}
+
+.avatar-list li a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.avatar-list li a:hover {
+    color: #000000;
+    background-color: #FFD700;  
+    border-radius: 10%;
+}
+
+.avatar-list li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.toggle-menu {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+    
+    .header h1 {
+        margin-left: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar a {
+        margin: 10px 0;
+    }
+    
+    .footer-runner .container {
+        padding: 1rem;
+    }
+    
+    .avatar-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .avatar-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .navbar a {
+        padding: 5px 10px;
+    }
+    
     #startButton {
-        padding: 8px;
-        font-size: calc(1.5rem + 1.5vw);
-    }
-
-
-    #gameMessages{
-        padding: 8px;
-        font-size: calc(1rem + 1vw);
-        justify-content: center;
-        text-align: justify;
-    }
-
-    .footer-juego {
-        padding: 0.5rem;
-    }
-
-    .footer-juego .container {
-        padding: 0.5rem;
+        width: 100%;
+        font-size: 18px;
     }
 }
