@@ -1,5 +1,4 @@
 #questionContainer{
-    display: block;
     text-align: center;
     margin-bottom: 1%;
 }
@@ -33,11 +32,13 @@
 .questionContainer2 #question{
     flex: 1;
     min-width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .questionContainer2 .background2 {
     background-color: #F3F3F3;
-    margin: 2% auto;
+    margin: 0 2% auto;
     border-radius: 2%;
     position: relative;
     z-index: 2;
@@ -57,8 +58,6 @@
 
 .questionContainer2 .background2 #options {
     width: 100%;
-    min-width: 100px;
-    max-width: 100px;
     margin: 2% auto;
 }
 
