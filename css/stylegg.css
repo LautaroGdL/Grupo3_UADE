@@ -48,6 +48,7 @@ body img{
 .navbar a {
     margin: 0 15px;
     text-decoration: none;
+    margin-right: 22px;
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
