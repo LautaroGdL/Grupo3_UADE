@@ -709,6 +709,7 @@ article:hover img:last-child {
 
     .datos-integrantes {
         font-size: 17px;
+        padding: 20px 40px;
     }
 
     .datos-integrantes ul {
@@ -747,7 +748,6 @@ article:hover img:last-child {
     }
 
 
-/*----Media: Juegos----*/
     .seccion-juegos {
         padding: 20px 10px;
         width: 90%;
