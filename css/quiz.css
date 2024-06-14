@@ -98,7 +98,7 @@ p {
 }
 
 #instruction{
-    padding-bottom: 1rem;
+    padding: 1em;
     max-width: 580px;
     margin: 2% auto;
     background-color: #fff;
