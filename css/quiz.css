@@ -199,7 +199,9 @@ img {
 }
 
 .endgame-image {
-    max-width: 600px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     margin: 2% auto;
     border-radius: 10px;
     background-image: url('../images/quiz/background.png');
@@ -500,6 +502,19 @@ img {
         margin-right: 1%;
     }
 
+
+    .endgame-image {
+        max-width: 100%;
+        margin: 2% auto;
+    }
+
+    .endgame-text {
+        font-size: 1em;
+        margin: 2% 1%;
+    }
+
+
+
     .footer-inicio .container {
         flex-direction: column;
         align-items: center;
@@ -709,6 +724,17 @@ img {
         height: auto;
         margin-bottom: 15px;
     }
+
+    .endgame-image {
+        max-width: 80%;
+        margin: 2% auto;
+    }
+
+    .endgame-text {
+        font-size: 1.2em;
+        margin: 2% 1%;
+    }
+
 
     .footer-inicio .container {
         padding: 1rem;
