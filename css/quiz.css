@@ -176,9 +176,9 @@ p{
     margin: 1% auto;    
 }
 
-#result {
-    font-size: 200%;
-    margin: 2% 0 1% 0;
+.result, #result {
+    font-size: 120%;
+    margin: 2% 1%;
     text-align: center;
 }
 
@@ -513,7 +513,10 @@ img {
         margin: 2% 1%;
     }
 
-
+    .result, #result {
+        font-size: 100%;
+        margin: 2% 1%;
+    }
 
     .footer-inicio .container {
         flex-direction: column;
@@ -735,6 +738,9 @@ img {
         margin: 2% 1%;
     }
 
+    .result, #result {
+        font-size: 150%;
+    }
 
     .footer-inicio .container {
         padding: 1rem;
