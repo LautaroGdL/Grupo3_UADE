@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     width: 100%;
 }
@@ -16,6 +16,10 @@ main {
     max-width: 1000px;
     margin: auto;
     text-align: center;
+}
+
+.main-content, footer, header, h2, h3, h4, h5, h6, p, .questionContainer2, .background2, #instruction, #options, .result, #result, .endgame-content, .endgame-text, .seccion-info, .datos-info, .avatar-list h2, .avatar-list ul, .avatar-list li a {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 footer{
