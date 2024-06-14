@@ -705,6 +705,18 @@ article:hover img:last-child {
         max-width: fit-content;
     }
 
+    .datos-integrantes {
+        font-size: 14px;
+    }
+
+    .datos-integrantes ul {
+        font-size: 14px;
+    }
+
+    .datos-integrantes li {
+        margin-bottom: 8px;
+    }
+
     .datos-info-pie {
         display: flex;
         flex-direction: column;
