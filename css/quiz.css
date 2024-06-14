@@ -102,7 +102,7 @@ p {
     max-width: 580px;
     margin: 2% auto;
     background-color: #fff;
-    border-radius: 10%;
+    border-radius: 1em;
 }
 
 #options {
