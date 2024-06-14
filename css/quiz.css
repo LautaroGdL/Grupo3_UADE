@@ -308,7 +308,7 @@ img {
 }
 
 .footer-inicio .container {
-    padding: 0.5rem;
+    padding: 1.5rem 0.5rem;
     text-align: center;
     background-color: #20A268;
     display:  flex;
