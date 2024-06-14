@@ -88,7 +88,7 @@ p {
 .background2 {
     background-image: url('../images/quiz/background_2.png');
     background-size: cover;
-    border-radius: 2%;
+    border-radius: 10%;
     position: relative;
     z-index: 2;
     padding: 1rem;
