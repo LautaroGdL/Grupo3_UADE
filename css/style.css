@@ -721,7 +721,7 @@ article:hover img:last-child {
     .datos-info-pie {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        width: 100%;
     }
 
     .datos-info-pie > ul {
@@ -729,11 +729,15 @@ article:hover img:last-child {
     }
 
     .datos-info-pie p,
-    .datos-info-pie h3,
     .datos-info-pie h4 {
         word-wrap: break-word;
         overflow-wrap: break-word;
         max-width: 100%;
+    }
+
+    .datos-info-pie h3 {
+        font-size: 23px;
+        width: 100%;
     }
 
     .datos-info-pie img {
