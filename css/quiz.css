@@ -479,9 +479,10 @@ img {
     }
 
     .option {
-        max-width: 80%;
-        font-size: 18px;
-        padding: 0.5rem;
+        max-width: calc(100% - 2rem);
+        margin: 0.3rem 0;
+        padding: 0.8rem;
+        font-size: 14px;
     }
 
     #nextButton {
@@ -500,6 +501,9 @@ img {
 
     #instruction {
         font-size: 25px;
+        padding: 0.5em;
+        max-width: calc(100% - 1em);
+        border-radius: 0.5em;
     }
 
     #question img {
