@@ -45,6 +45,7 @@ p {
 
 .puntos{
     font-size: 1.7em;
+    font-family: Arial, sans-serif;
 }
 
 #question {
@@ -350,13 +351,14 @@ img {
     gap: 2%;
     justify-content: center;
     margin-top: 1rem;
+    width: 100%;
 }
 
 .avatar-list h2 {
     font-size: 15px;
     margin-bottom: 10px;
     color: white;
-
+    font-family: Arial, sans-serif;
 }
 
 .avatar-list ul {
