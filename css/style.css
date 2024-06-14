@@ -604,6 +604,7 @@ article:hover img:last-child {
 @media (max-width: 480px) {
     body {
         overflow-y: visible;
+        font-size: 17px;
     }
 
     .footer-inicio .container {
@@ -707,7 +708,7 @@ article:hover img:last-child {
     }
 
     .datos-integrantes {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .datos-integrantes ul {
