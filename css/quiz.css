@@ -86,7 +86,8 @@ p {
 }
 
 .background2 {
-    background-color: #F3F3F3;
+    background-image: url('../images/quiz/background_2.png');
+    background-size: cover;
     border-radius: 2%;
     position: relative;
     z-index: 2;
@@ -100,6 +101,8 @@ p {
     padding-bottom: 1rem;
     max-width: 580px;
     margin: 2% auto;
+    background-color: #fff;
+    border-radius: 2%;
 }
 
 #options {
