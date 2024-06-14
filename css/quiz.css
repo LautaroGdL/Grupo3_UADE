@@ -476,8 +476,8 @@ img {
     }
 
     .option {
-        max-width: 100%;
-        font-size: 25px;
+        max-width: 80%;
+        font-size: 18px;
         padding: 0.5rem;
     }
 
@@ -584,6 +584,10 @@ img {
     
     h3 {
         font-size: 1em;
+    }
+
+    #options{
+        width: 80%;
     }
     
 }
