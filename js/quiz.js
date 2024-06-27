@@ -172,19 +172,19 @@ function endGame() {
 
 // Actualiza la función de reinicio para mostrar el contenedor nuevamente
 function restartGame() {
-    const questionContainer2 = document.querySelector('.questionContainer2'); // Selecciona el contenedor
-    questionContainer2.style.display = 'grid'; // Muestra el contenedor
-    questionElement.style.display = 'block'; // Muestra el elemento de la pregunta
-    optionsElement.style.display = 'block'; // Muestra el elemento de las opciones
-    nextButton.style.display = 'block'; // Muestra el botón de siguiente
-    document.getElementById('instruction').style.display = 'block'; // Muestra las instrucciones
+    const questionContainer2 = document.querySelector('.questionContainer2');
+    questionContainer2.style.display = 'grid';
+    questionElement.style.display = 'block';
+    optionsElement.style.display = 'block';
+    nextButton.style.display = 'block';
+    document.getElementById('instruction').style.display = 'block';
 
     currentQuestionIndex = 0;
     score = 0;
-    scoreElement.textContent = 'Puntaje: 0'; // Reiniciamos el puntaje
-    showQuestion(); // Muestra la primera pregunta
-    resultElement.textContent = ''; // Limpia el resultado anterior
-    restartButton.style.display = 'none'; // Oculta el botón de reinicio
+    scoreElement.textContent = 'Puntaje: 0';
+    showQuestion();
+    resultElement.textContent = ''; 
+    restartButton.style.display = 'none';
 }
 
 
